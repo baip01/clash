@@ -5,823 +5,479 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _IR, server: go.amirhossein.shop, port: 25692, type: vmess, uuid: 2c1a3eff-73b6-4254-f6e5-013d59028b1b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US, server: us1.oceis.net, port: 80, type: vmess, uuid: e9ff4d30-b9e9-11ed-b039-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmws, headers: {Host: awkj}}, udp: true}
-  - {name: _US 2, server: b2f37b8.v2.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /d/b2f37b8.fm.apple.com:106061, headers: {Host: b2f37b8.v2.gladns.com}}, udp: true}
-  - {name: _CN, server: gzdx.jcnode.top, port: 23000, type: vmess, uuid: 9a62cfee-4a48-4329-b4ac-4c29d9665f37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}, udp: true}
-  - {name: _CN 2, server: v01.gutingting.com, port: 30035, type: vmess, uuid: 7a8c5738-dbd8-47d3-ad92-4a3f0dc36df7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: v01.gutingting.com}}, udp: true}
-  - {name: _US 3, server: www.paotung.org, port: 2443, type: vmess, uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cone, headers: {Host: www.paotung.org}}, udp: true}
-  - {name: _CN 3, server: gzdx.jcnode.top, port: 41001, type: vmess, uuid: 5f709f6c-4f28-4515-b680-15d6369b9229, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}, udp: true}
-  - {name: _TW, server: b2f37b8.v7.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /d/b2f37b8.fm.apple.com:106061, headers: {Host: b2f37b8.v7.gladns.com}}, udp: true}
-  - {name: _CN 4, server: ns01.gutingting.com, port: 30044, type: vmess, uuid: 40bf71f5-67bf-440e-916e-f44264d20d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: ns01.gutingting.com}}, udp: true}
-  - {name: _CN 5, server: 112.33.32.136, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 6, server: 112.33.32.136, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _JP, server: 141.147.149.186, port: 10344, type: vmess, uuid: 479972b1-e60d-4985-9a7f-dfee6498adb1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _CN 7, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: _CN 8, server: 223.111.202.139, port: 63086, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: jp-balancer.myn1des.com}}, udp: true}
-  - {name: _CN 9, server: 223.111.202.139, port: 63086, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua}, udp: true}
-  - {name: _US 4, server: tls.admin.tlz.lol, port: 7898, type: vmess, uuid: 53816397-f39d-4d64-cf0d-9f7e3a852184, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: tls.admin.tlz.lol}}, udp: true}
-  - {name: _CN 10, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nba, headers: {Host: hy.guanguan.club}}, udp: true}
-  - {name: _KR, server: 0kxedm1x8q8lksmj08.xingbayun.buzz, port: 4001, type: vmess, uuid: 5eb28488-7c95-4f39-b711-e5cc96ec1756, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 11, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nba, headers: {Host: sg1.oraclec.pp.ua}}, udp: true}
-  - {name: _CN 12, server: g7z35c66m.ns28bdh90.y2hd6jq1t.soabgo.com, port: 26000, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 13, server: 117.164.185.222, port: 16109, type: vmess, uuid: b8cce40a-6eba-3bcd-a255-005930040937, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 14, server: g7z35c66m.ns28bdh90.y2hd6jq1t.soabgo.com, port: 26001, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 5, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vuk1.0bad.com}}, udp: true}
-  - {name: _US 6, server: r2wind.com, port: 8880, type: vmess, uuid: 98ccbde8-a407-4d43-9463-4b0ee12e238e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub-cf-v2.trojan.tel}}, udp: true}
-  - {name: _CY, server: 203.24.108.8, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _CN 15, server: cs1.bbcloud.life, port: 41406, type: vmess, uuid: d0731cf1-db62-478d-aa20-3b73b98a9c6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cs1.bbcloud.life}}, udp: true}
-  - {name: _US 7, server: 129.146.133.49, port: 443, type: vmess, uuid: 35c83a8f-c627-48a4-c280-ff0e46600dfe, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}, udp: true}
-  - {name: _US 8, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: _US 9, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/sg2?ed=2048", headers: {Host: sg2.pqjc.buzz}}, udp: true}
-  - {name: _CN 16, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 10, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 2ddcf12d-52fa-4e09-b4f1-c52d5cbee69b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vc-usa.181227.xyz}}, udp: true}
-  - {name: _HK, server: 47.243.111.25, port: 31705, type: vmess, uuid: d0fc2199-6bb4-4559-a7ec-48f3d728500d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _HK 2, server: 43.154.90.134, port: 57074, type: vmess, uuid: 6b6dd11a-798c-401e-ba46-d6272e29aca3, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /hk4/getData, headers: {Host: hk5.linkeden.co}}, udp: true}
-  - {name: _US 11, server: america1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vAambj4DgXrs5sfCFptMk, headers: {Host: america1.yj2022.ga}}, udp: true}
-  - {name: _US 12, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _US 13, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}, udp: true}
-  - {name: _US 14, server: 02.duduson01.repl.co, port: 443, type: vmess, uuid: ececb2e8-fdf8-4e6c-92b7-a5d363bc4e9b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ececb2e8-fdf8-4e6c-92b7-a5d363bc4e9b-vm, headers: {Host: 02.duduson01.repl.co}}, udp: true}
-  - {name: _US 15, server: 173.245.59.168, port: 8080, type: vmess, uuid: 27848739-7e62-4138-9fd3-938a63964b6b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /KTR, headers: {Host: 4.arvanktbr.store}}, udp: true}
-  - {name: _CN 17, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 16, server: us.he.04.nekocloud.cn, port: 19042, type: vmess, uuid: 767ebf8c-3020-3e52-9109-4bdb49510842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: us.he.04.nekocloud.cn}}, udp: true}
-  - {name: _US 17, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _NL, server: 46.182.107.161, port: 443, type: vmess, uuid: 29a5d48e-24f1-48fd-a5e1-9a46cb31032f, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
-  - {name: _US 18, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US 19, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
-  - {name: _US 20, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}, udp: true}
-  - {name: _US 21, server: new3.hucloud-dns.xyz, port: 443, type: vmess, uuid: d8eb886b-05be-4628-f2a2-a7e5b305e35a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: new3.hucloud-dns.xyz}}, udp: true}
+  - {name: _CN, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US, server: finland2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yWJGGBHoVpr3DbNuVycP, headers: {Host: finland2.yj2022.ga}}, udp: true}
+  - {name: _US 2, server: england1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: england1.yj2022.ga}}, udp: true}
+  - {name: _US 3, server: 4559186168.xhtk.cc, port: 443, type: vmess, uuid: e1da11a9-6ab7-e0c3-3ca0-92ad364db204, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /lklcvws, headers: {Host: 4559186168.xhtk.cc}}, udp: true}
+  - {name: _US 4, server: england1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: england1.yj2022.ga}}, udp: true}
+  - {name: _US 5, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 8ed8bd9b.8200860.xyz}}, udp: true}
+  - {name: _US 6, server: germany2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8kH8qnepjkprbsidLrLkmX, headers: {Host: germany2.yj2022.ga}}, udp: true}
+  - {name: _JP, server: jp1.mooooobai.top, port: 16342, type: vmess, uuid: 8fe40424-de1a-48e7-9a78-247dae536cce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 7, server: cf-lt.sharecentre.online, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
+  - {name: _JP 2, server: 141.147.149.186, port: 10344, type: vmess, uuid: 479972b1-e60d-4985-9a7f-dfee6498adb1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _CN 2, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CA, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /UMW36262, headers: {Host: frgt1.ssr-free2.xyz}}, udp: true}
+  - {name: _US 8, server: germany1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /XQ2WCa29jfDMGBcbnQ, headers: {Host: germany1.yj2022.ga}}, udp: true}
+  - {name: _CN 3, server: 36.134.16.190, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 9, server: 172.64.150.150, port: 443, type: vmess, uuid: 142fcf72-fd39-4cd7-cbf8-064014c8b4e6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp06.cctvvip.ml}}, udp: true}
+  - {name: _US 10, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
+  - {name: _US 11, server: s245.rpscloud3.cloud, port: 80, type: vmess, uuid: d65ca664-72d3-4a14-a836-00eadd0df46e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /graphql, headers: {Host: s245.rpscloud3.cloud}}, udp: true}
+  - {name: _US 12, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
+  - {name: _CN 4, server: 40.kccic2pa.xyz, port: 50040, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 5, server: 05.kccic2pa.xyz, port: 50005, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 6, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-AWKJ}}, udp: true}
+  - {name: _US 13, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: _US 14, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
+  - {name: _CN 7, server: 28.kccic2pa.xyz, port: 50028, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 8, server: 20.kccic2pa.xyz, port: 50020, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 9, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nba, headers: {Host: sg1.oraclec.pp.ua}}, udp: true}
+  - {name: _US 15, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
+  - {name: _US 16, server: v2kr1.cosdayan.top, port: 443, type: vmess, uuid: 6440f9c6-9514-4fb5-f281-3aad1d1418be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2kr1.cosdayan.top}}, udp: true}
+  - {name: _GB, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vuk1.0bad.com}}, udp: true}
+  - {name: _US 17, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
   - {name: undefined, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: _CN 18, server: gddxd.fosi.hk, port: 44120, type: vmess, uuid: 44e1fd03-838c-407b-bb6b-8afa3995257a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gddxd.fosi.hk}}, udp: true}
-  - {name: _US 22, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh.sharecentre.online}}, udp: true}
-  - {name: _US 23, server: la.awsbest.com, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: _AU, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}, udp: true}
-  - {name: _CN 19, server: cdn-cn.nekocloud.cn, port: 19029, type: vmess, uuid: 767ebf8c-3020-3e52-9109-4bdb49510842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: _CN 20, server: gzdx.jcnode.top, port: 28002, type: vmess, uuid: 9a62cfee-4a48-4329-b4ac-4c29d9665f37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}, udp: true}
-  - {name: _CN 21, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 24, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl1.scproxy.top}}, udp: true}
-  - {name: _CN 22, server: 223.111.202.139, port: 63088, type: vmess, uuid: cef94bbf-8bd7-3565-a1c8-0e311643e657, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mugua, headers: {Host: tw-load-balancer.myn1des.com}}, udp: true}
-  - {name: _US 25, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/jp2?ed=2048", headers: {Host: jp2.pqjc.buzz}}, udp: true}
-  - {name: _US 26, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _US 27, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}, udp: true}
-  - {name: _US 28, server: ger2.onemaster.sbs, port: 2053, type: vmess, uuid: a6067377-e76f-4450-b04e-3b470ec92cb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ger2.onemaster.sbs}}, udp: true}
-  - {name: _CN 23, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 10, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 18, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}, udp: true}
+  - {name: _US 19, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
+  - {name: _CN 11, server: 31.kccic2pa.xyz, port: 50031, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 12, server: 30.kccic2pa.xyz, port: 50030, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 20, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: uk.cloudflare.quest}}, udp: true}
+  - {name: _CN 13, server: hy.guanguan.club, port: 11410, type: vmess, uuid: 5707bceb-1da9-41e1-bd03-1bb3d1c28a2c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nba, headers: {Host: hy.guanguan.club}}, udp: true}
+  - {name: _US 21, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _US 22, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl1.scproxy.top}}, udp: true}
+  - {name: _US 23, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
+  - {name: _US 24, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
+  - {name: _CN 14, server: 17.kccic2pa.xyz, port: 50017, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _BZ, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _US 29, server: srfre-mehdi2.vahidtoni.life, port: 443, type: vmess, uuid: 7f33840f-40e5-47bf-b50f-5907e43bea7a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: srfre-mehdi2.vahidtoni.life}}, udp: true}
-  - {name: _US 30, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg1.sharecentrepro.com}}, udp: true}
-  - {name: _CN 24, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 31, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/jp3?ed=2048", headers: {Host: jp3.pqjc.buzz}}, udp: true}
-  - {name: _US 32, server: sg.718398.xyz, port: 8443, type: vmess, uuid: 6a091996-d012-4e5e-8448-8abe681eab99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssvcus, headers: {Host: sg.718398.xyz}}, udp: true}
-  - {name: _IR 2, server: srvet-4.mehyaz.shop, port: 18638, type: vmess, uuid: 9961e987-ec2b-4998-aa03-67825bf6a45d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/], headers: {Host: [srvet-4.mehyaz.shop]}}, udp: true}
-  - {name: _HK 3, server: bia-to.paraphdev.click, port: 80, type: vmess, uuid: e46a7588-f18b-4d08-deaa-835047bd2895, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bia-to.paraphdev.click}}, udp: true}
-  - {name: _US 33, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
-  - {name: _CN 25, server: gyiepl.1aba.cn, port: 17834, type: vmess, uuid: 9a62cfee-4a48-4329-b4ac-4c29d9665f37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: gyiepl.1aba.cn}}, udp: true}
-  - {name: _CN 26, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 27, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _TW 2, server: b2f37b8.v8.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /d/b2f37b8.fm.apple.com:106061, headers: {Host: b2f37b8.v8.gladns.com}}, udp: true}
-  - {name: _CA, server: ca-ls03.nb1.fr, port: 64443, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /clientarea, headers: {Host: ca-ls03.nb1.fr}}, udp: true}
-  - {name: _US 34, server: 162.159.142.203, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/jp1?ed=2048", headers: {Host: jp1.pqjc.buzz}}, udp: true}
-  - {name: _US 35, server: 141.101.114.111, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _US 36, server: france1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: france1.yj2022.ga}}, udp: true}
-  - {name: _US 37, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
-  - {name: _CA 2, server: 23.227.38.25, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US 38, server: 172.67.147.152, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chcara, headers: {Host: v2fly.samrta.website}}, udp: true}
-  - {name: _US 39, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}, udp: true}
-  - {name: _CN 28, server: 36.156.102.164, port: 10003, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}, udp: true}
-  - {name: _US 40, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4e7cc378.8200860.xyz}}, udp: true}
-  - {name: _CN 29, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: 5f709f6c-4f28-4515-b680-15d6369b9229, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}, udp: true}
-  - {name: _JP 2, server: dj.svip8.cn, port: 10000, type: vmess, uuid: 18cd2ad7-02b0-4959-9ccd-eb02c1155c69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 41, server: cdn.xia.me, port: 443, type: vmess, uuid: 68fe8d27-cbc8-4e72-90b7-70d3bb69dfd3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /api, headers: {Host: us12.cachexy.ga}}, udp: true}
-  - {name: _US 42, server: 141.101.114.150, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _US 43, server: us.he.07.nekocloud.cn, port: 10002, type: vmess, uuid: 767ebf8c-3020-3e52-9109-4bdb49510842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: us.he.07.nekocloud.cn}}, udp: true}
-  - {name: _CN 30, server: 117.164.185.222, port: 16284, type: vmess, uuid: b8cce40a-6eba-3bcd-a255-005930040937, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 44, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: undefined 2, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol2.fovi.tk}}, udp: true}
-  - {name: _US 45, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
-  - {name: _US 46, server: lv1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
-  - {name: _US 47, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
-  - {name: _NL 2, server: 46.182.107.22, port: 443, type: vmess, uuid: de491802-233e-47f2-8c6c-d19bcf5bd56b, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
-  - {name: _US 48, server: v2kr1.cosdayan.top, port: 443, type: vmess, uuid: 6440f9c6-9514-4fb5-f281-3aad1d1418be, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: v2kr1.cosdayan.top}}, udp: true}
-  - {name: _JP 3, server: dj.svip8.cn, port: 10000, type: vmess, uuid: 18cd2ad7-02b0-4959-9ccd-eb02c1155c69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _JP 4, server: dj.svip8.cn, port: 10000, type: vmess, uuid: 18cd2ad7-02b0-4959-9ccd-eb02c1155c69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 49, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 4bb4ced4.8200860.xyz}}, udp: true}
-  - {name: _CN 31, server: 36.156.102.166, port: 10001, type: vmess, uuid: cb7001c7-e495-41ac-b942-f25f60523414, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 32, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-AWKJ}}, udp: true}
-  - {name: _US 50, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/sg1?ed=2048", headers: {Host: sg1.pqjc.buzz}}, udp: true}
-  - {name: _US 51, server: white1.jhyth.repl.co, port: 443, type: vmess, uuid: 1374c13a-4b2b-4840-9646-5994b9d56e0b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /1374c13a-4b2b-4840-9646-5994b9d56e0b-vmess, headers: {Host: white1.jhyth.repl.co}}, udp: true}
-  - {name: _CN 33, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 52, server: america2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /SRhXKZqggNrPMELA525Kw, headers: {Host: america2.yj2022.ga}}, udp: true}
-  - {name: _US 53, server: dszfa.pages.dev, port: 443, type: vmess, uuid: 806c101e-8fcb-4e9b-94be-bc9ee608a096, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /806c101e-8fcb-4e9b-94be-bc9ee608a096-vmess, headers: {Host: dszfa.pages.dev}}, udp: true}
-  - {name: _TW 3, server: b2f37b8.v9.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /d/b2f37b8.fm.apple.com:106061, headers: {Host: b2f37b8.v9.gladns.com}}, udp: true}
-  - {name: _CN 34, server: v01.gutingting.com, port: 30016, type: vmess, uuid: 40bf71f5-67bf-440e-916e-f44264d20d05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aceamedv, headers: {Host: v01.gutingting.com}}, udp: true}
+  - {name: _CN 15, server: 42.kccic2pa.xyz, port: 50042, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 25, server: 172.67.135.55, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _CN 16, server: 26.kccic2pa.xyz, port: 50026, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: _BZ 2, server: 203.30.191.2, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US 54, server: dearmb.76898102.xyz, port: 2052, type: vmess, uuid: d264f990-a6a5-3832-bf37-1fccaed298dd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ancihgrt, headers: {Host: dearmb.76898102.xyz}}, udp: true}
-  - {name: _US 55, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 3464a64e.8200860.xyz}}, udp: true}
-  - {name: _US 56, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
-  - {name: _TW 4, server: b2f37b8.v4.gladns.com, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /d/b2f37b8.fm.apple.com:106061, headers: {Host: b2f37b8.v4.gladns.com}}, udp: true}
-  - {name: _US 57, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk1.sharecentrepro.com}}, udp: true}
-  - {name: _JP 5, server: dj.svip8.cn, port: 10000, type: vmess, uuid: 18cd2ad7-02b0-4959-9ccd-eb02c1155c69, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 58, server: finland2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /yWJGGBHoVpr3DbNuVycP, headers: {Host: finland2.yj2022.ga}}, udp: true}
-  - {name: _CN 35, server: hncu.donghui.tech, port: 33956, type: vmess, uuid: 44e1fd03-838c-407b-bb6b-8afa3995257a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hncu.donghui.tech}}, udp: true}
-  - {name: _US 59, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}, udp: true}
-  - {name: _US 60, server: hucloud.tk, port: 443, type: vmess, uuid: 2df3ed4a-4313-45f9-b742-2f02ce593a6e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /huhu, headers: {Host: hucloud.tk}}, udp: true}
-  - {name: _US 61, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
-  - {name: _US 62, server: srfre-mehdi2.vahidtoni.life, port: 443, type: vmess, uuid: 7f33840f-40e5-47bf-b50f-5907e43bea7a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: srfre-mehdi2.vahidtoni.life}}, udp: true}
-  - {name: _US 63, server: us04.cctvvip.ml, port: 443, type: vmess, uuid: 1c23edae-1aa1-4cac-ad3e-7f2ea5f53eed, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: us04.cctvvip.ml}}, udp: true}
-  - {name: _BZ 3, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _US 64, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: _CA 3, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /UMW36262, headers: {Host: frgt1.ssr-free2.xyz}}, udp: true}
-  - {name: _US 65, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 84a514ba.8200860.xyz}}, udp: true}
-  - {name: _US 66, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
-  - {name: _US 67, server: 172.67.135.55, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _CN 36, server: cdn-cn.nekocloud.cn, port: 18999, type: vmess, uuid: 767ebf8c-3020-3e52-9109-4bdb49510842, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /catnet, headers: {Host: cdn-cn.nekocloud.cn}}, udp: true}
-  - {name: _US 68, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg2.sharecentrepro.com}}, udp: true}
-  - {name: _JP 6, server: 141.147.149.186, port: 10344, type: vmess, uuid: 479972b1-e60d-4985-9a7f-dfee6498adb1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _US 69, server: fr1.trump2023.org, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _CN 37, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 70, server: germany2.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /8kH8qnepjkprbsidLrLkmX, headers: {Host: germany2.yj2022.ga}}, udp: true}
-  - {name: _US 71, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US 72, server: germany1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /XQ2WCa29jfDMGBcbnQ, headers: {Host: germany1.yj2022.ga}}, udp: true}
-  - {name: _CN 38, server: sh6c3zuc0.xz56bm2v8.lzmg3khpq.soabgo.com, port: 45001, type: vmess, uuid: FF5D3BF5-1296-FB0A-4596-B3CD0C884200, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN 39, server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 73, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US 74, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 6a091996-d012-4e5e-8448-8abe681eab99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vcus, headers: {Host: vc-usa.181227.xyz}}, udp: true}
-  - {name: _US 75, server: cf-lt.sharecentre.online, port: 8880, type: vmess, uuid: e59bd762-dacd-445c-8e2a-e1c5812949cb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v10.asuka.buzz}}, udp: true}
-  - {name: _US 76, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _VN, server: 103.143.209.42, port: 80, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _NL 3, server: 46.182.107.249, port: 443, type: vmess, uuid: 990006bd-cb20-482f-9c97-f5fc65359605, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
-  - {name: _US 77, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 8ed8bd9b.8200860.xyz}}, udp: true}
-  - {name: _CN 40, server: 106.55.234.95, port: 31372, type: vmess, uuid: 374d3519-455c-45b8-e3b1-0e2e9fcf4411, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US 78, server: 142.0.137.9, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
-  - {name: _US 79, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 6a091996-d012-4e5e-8448-8abe681eab99, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vcus, headers: {Host: vc-usa.181227.xyz}}, udp: true}
-  - {name: _US 80, server: vc-usa.181227.xyz, port: 443, type: vmess, uuid: 2ddcf12d-52fa-4e09-b4f1-c52d5cbee69b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vcus, headers: {Host: vc-usa.181227.xyz}}, udp: true}
-  - {name: _US 81, server: england1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /Eynyyo4kJfl2fkJfl2f, headers: {Host: england1.yj2022.ga}}, udp: true}
-  - {name: _US 82, server: us1.wanwusheng.me, port: 443, type: vmess, uuid: 44ceb389-4cea-4ea1-eef9-11ce6f3effe6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.wanwusheng.me}}, udp: true}
-  - {name: _CA 4, server: ca1.xvless.xyz, port: 443, type: vmess, uuid: 40c43ed4-b826-4d29-8f11-ebbafd361a3b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ca1.xvless.xyz}}, udp: true}
-  - {name: _US 83, server: 4559186168.xhtk.cc, port: 443, type: vmess, uuid: e1da11a9-6ab7-e0c3-3ca0-92ad364db204, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /lklcvws, headers: {Host: 4559186168.xhtk.cc}}, udp: true}
-  - {name: _CN 41, server: out.jijifun.com, port: 30033, type: ss, cipher: aes-256-gcm, password: !<str> 114514, plugin: obfs, plugin-opts: {mode: http, host: 84f48068fe.microsoft.com}, udp: true}
-  - {name: _CN 42, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*, udp: true}
-  - {name: _CN 43, server: gdyd.aikun.online, port: 36253, type: ss, cipher: aes-128-gcm, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3, udp: true}
-  - {name: _US 84, server: 45.56.118.40, port: 29405, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 3751301064, udp: true}
-  - {name: _AU 2, server: 185.167.116.253, port: 9064, type: ss, cipher: aes-256-cfb, password: cp8pRSUAyLhTfVWH, udp: true}
-  - {name: _CN 44, server: v01.gutingting.com, port: 30017, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _CN 45, server: v01.gutingting.com, port: 30050, type: trojan, password: 40bf71f5-67bf-440e-916e-f44264d20d05, skip-cert-verify: true, udp: true}
-  - {name: _US 85, server: sanjose-d2.4422331.xyz, port: 10086, type: trojan, password: 4134219f-2384-449c-92e9-50fe8474c30a, sni: https%3a%2f%2fmofa.4422331.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN 46, server: v01.gutingting.com, port: 20222, type: trojan, password: 7a8c5738-dbd8-47d3-ad92-4a3f0dc36df7, skip-cert-verify: true, udp: true}
-  - {name: _JP 7, server: ssrsub.o07.trojan.tel, port: 80, type: trojan, password: 98ccbde8-a407-4d43-9463-4b0ee12e238e, skip-cert-verify: true, udp: true}
-  - {name: _CN 47, server: v01.gutingting.com, port: 30050, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _CN 48, server: v01.gutingting.com, port: 30005, type: trojan, password: 40bf71f5-67bf-440e-916e-f44264d20d05, skip-cert-verify: true, udp: true}
-  - {name: _CN 49, server: v01.gutingting.com, port: 30056, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _SG, server: dl-sg2.steamdownload.top, port: 50000, type: trojan, password: c30b14da-adac-4bb3-ac27-c5759d4890ac, skip-cert-verify: true, udp: true}
-  - {name: _CN 50, server: v01.gutingting.com, port: 30005, type: trojan, password: 7a8c5738-dbd8-47d3-ad92-4a3f0dc36df7, skip-cert-verify: true, udp: true}
-  - {name: _CN 51, server: hnm.xiaohouzi.club, port: 27482, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _CN 52, server: v01.gutingting.com, port: 30056, type: trojan, password: 40bf71f5-67bf-440e-916e-f44264d20d05, skip-cert-verify: true, udp: true}
-  - {name: _US 86, server: www.yuyu96.cf, port: 41002, type: trojan, password: jIrQY10cG1, skip-cert-verify: true, udp: true}
-  - {name: _CN 53, server: v02.gutingting.com, port: 30057, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _KR 2, server: ssrsub.t03.trojan.tel, port: 80, type: trojan, password: 98ccbde8-a407-4d43-9463-4b0ee12e238e, skip-cert-verify: true, udp: true}
-  - {name: _CN 54, server: gddx.aikun.online, port: 24388, type: trojan, password: d0dc5f19-5854-4cb7-8e7e-4c8336dbcfb3, skip-cert-verify: true, udp: true}
-  - {name: _KR 3, server: ssrsub.o03.trojan.tel, port: 80, type: trojan, password: 98ccbde8-a407-4d43-9463-4b0ee12e238e, skip-cert-verify: true, udp: true}
-  - {name: _CN 55, server: v01.gutingting.com, port: 20221, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _CN 56, server: v01.gutingting.com, port: 20222, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _CN 57, server: v02.gutingting.com, port: 20227, type: trojan, password: 40bf71f5-67bf-440e-916e-f44264d20d05, skip-cert-verify: true, udp: true}
-  - {name: _CN 58, server: gzdx.jcnode.top, port: 41000, type: trojan, password: 5f709f6c-4f28-4515-b680-15d6369b9229, skip-cert-verify: true, udp: true}
-  - {name: _CN 59, server: v02.gutingting.com, port: 20225, type: trojan, password: d1b45247-0ffa-4e4f-b8f3-ea9e83db0b96, skip-cert-verify: true, udp: true}
-  - {name: _CN 60, server: v01.gutingting.com, port: 20222, type: trojan, password: 8bba2e82-a311-4b60-8db6-8a170ecb027a, skip-cert-verify: true, udp: true}
-  - {name: _CN 61, server: v02.gutingting.com, port: 20225, type: trojan, password: 7a8c5738-dbd8-47d3-ad92-4a3f0dc36df7, skip-cert-verify: true, udp: true}
+  - {name: _US 26, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
+  - {name: _US 27, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: _US 28, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _CA 2, server: 23.227.38.25, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US 29, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 3464a64e.8200860.xyz}}, udp: true}
+  - {name: _US 30, server: b.gguu.pp.ua, port: 443, type: vmess, uuid: e959bcfa-500d-419a-b71d-e7fa2bf63969, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /123, headers: {Host: b.gguu.pp.ua}}, udp: true}
+  - {name: _US 31, server: no.aries.ovh, port: 2052, type: vmess, uuid: 88aa4851-2b1e-404c-a453-685f12489f9d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo.cloudflare.quest}}, udp: true}
+  - {name: _CN 17, server: 23.kccic2pa.xyz, port: 50023, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 32, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: jp1.sharecentrepro.com}}, udp: true}
+  - {name: _CN 18, server: 32.kccic2pa.xyz, port: 50032, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 33, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _CN 19, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 34, server: 172.64.153.158, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _US 35, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _CN 20, server: 31.kccic2pa.xyz, port: 50031, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 36, server: france1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: france1.yj2022.ga}}, udp: true}
+  - {name: _CN 21, server: 01.kccic2pa.xyz, port: 50001, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 37, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _CN 22, server: 08.kccic2pa.xyz, port: 50008, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: undefined 2, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol2.fovi.tk}}, udp: true}
+  - {name: _US 38, server: 172.64.154.103, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _US 39, server: 172.67.45.144, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US 40, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}, udp: true}
+  - {name: _US 41, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US 42, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _CN 23, server: 21.kccic2pa.xyz, port: 50021, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 43, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US 44, server: america1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vAambj4DgXrs5sfCFptMk, headers: {Host: america1.yj2022.ga}}, udp: true}
+  - {name: _US 45, server: ny1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
+  - {name: _US 46, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: c7d5ea85.8200860.xyz}}, udp: true}
+  - {name: _US 47, server: ping.pe, port: 2095, type: vmess, uuid: d1baf2c8-4b0b-400d-8e08-b1a2ff149fa3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /TG:@hkaa0, headers: {Host: lin.d.sg.wyhkaa0.gq}}, udp: true}
+  - {name: _CN 24, server: 0kxedm1x8q8lksmj01.xingbayun.buzz, port: 1001, type: vmess, uuid: 5eb28488-7c95-4f39-b711-e5cc96ec1756, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 25, server: 12.kccic2pa.xyz, port: 50012, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 26, server: cs1.bbcloud.life, port: 41406, type: vmess, uuid: d0731cf1-db62-478d-aa20-3b73b98a9c6f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: cs1.bbcloud.life}}, udp: true}
+  - {name: _CN 27, server: 04.kccic2pa.xyz, port: 50004, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 48, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
+  - {name: _US 49, server: github.seatech.ir, port: 664, type: vmess, uuid: c8bc0abb-d759-4b49-a76c-cc6b906f1dad, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /graphql, headers: {Host: github.seatech.ir}}, udp: true}
+  - {name: _US 50, server: iranserver.com, port: 80, type: vmess, uuid: 8c7135d1-770e-4a61-8005-37193e67018d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ir34.arsalanv3.sbs}}, udp: true}
+  - {name: _US 51, server: news.microsoft.com, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}, udp: true}
+  - {name: _CN 28, server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 52, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
+  - {name: _CN 29, server: 03.kccic2pa.xyz, port: 50003, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 30, server: 25.kccic2pa.xyz, port: 50025, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 31, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US 53, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: _CN 32, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 33, server: 06.kccic2pa.xyz, port: 50006, type: vmess, uuid: 834ed4d6-b0c5-4b4b-96a4-b3056a3dc441, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _JP 3, server: jp.mooooobai.top, port: 25152, type: vmess, uuid: 8fe40424-de1a-48e7-9a78-247dae536cce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN 34, server: gzcm.xzcloud.pro, port: 12530, type: trojan, password: 0b742c85-2a50-32a8-9019-ad1f03c6b956, sni: mg.jike123.xyz, skip-cert-verify: true, udp: true}
+  - {name: _CN 35, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _CN 36, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, skip-cert-verify: true, udp: true}
+  - {name: _CN 37, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24siga03.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: _CN 38, server: iplc.xiaohouzi.club, port: 20039, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _CN 39, server: hn.xiaohouzi.club, port: 18456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
+  - {name: _CN 40, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _CN 41, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _CN 42, server: hn.xiaohouzi.club, port: 51056, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24vutnkr02.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: _CN 43, server: 223.111.129.6, port: 35477, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
   - {name: _MU, server: www.furbbs.top, port: 443, type: trojan, password: ef18607c, skip-cert-verify: true, udp: true}
-  - {name: _US 87, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: true, udp: true}
-  - {name: _US 88, server: 148.59.74.216, port: 443, type: trojan, password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: _DE 2, server: 84.252.121.218, port: 443, type: trojan, password: 5c0eb7b7-6db9-4ff0-a324-62caa9198930, sni: vzwzasc.cn, skip-cert-verify: true, udp: true}
-  - {name: _CN 62, server: hn.xiaohouzi.club, port: 19024, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, skip-cert-verify: true, udp: true}
-  - {name: _CN 63, server: hnm.xiaohouzi.club, port: 18634, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, skip-cert-verify: true, udp: true}
-  - {name: _CN 64, server: hnm.xiaohouzi.club, port: 17103, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: "%24canada01.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _CN 65, server: hn.xiaohouzi.club, port: 18456, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, skip-cert-verify: true, udp: true}
-  - {name: _CN 66, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _CN 67, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24siga03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _CN 68, server: hn.xiaohouzi.club, port: 61003, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hn.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _CN 69, server: hnm.xiaohouzi.club, port: 47551, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: hnm.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _DE 3, server: stonebreak.online, port: 443, type: trojan, password: xl87654321, skip-cert-verify: true, udp: true}
-  - {name: _JP 8, server: 150.66.13.75, port: 443, type: trojan, password: df283334-6f6e-4efb-9a8a-b8ecf3040924, sni: tk15.1coinvp.vip, skip-cert-verify: true, udp: true}
-  - {name: _CN 70, server: frontend.yijianlian.app, port: 54530, type: trojan, password: 0efd39c8-5499-454d-9afe-621058a1921b, skip-cert-verify: true, udp: true}
-  - {name: _CN 71, server: frontend.yijianlian.app, port: 54590, type: trojan, password: 0efd39c8-5499-454d-9afe-621058a1921b, skip-cert-verify: true, udp: true}
+  - {name: _US 54, server: 15.204.210.176, port: 80, type: trojan, password: c0fde6ac-a07c-4f60-84ae-e7ed4da78a6f, skip-cert-verify: true, udp: true}
+  - {name: _CN 44, server: 223.111.129.6, port: 54829, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
+  - {name: _CN 45, server: 120.241.255.196, port: 54585, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
+  - {name: _CN 46, server: 120.241.255.196, port: 14256, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
+  - {name: _CN 47, server: 120.241.255.196, port: 25462, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
+  - {name: _US 55, server: github.seatech.ir, port: 443, type: trojan, password: SSIaZaRpA5, skip-cert-verify: true, udp: true}
+  - {name: _CN 48, server: 120.241.255.196, port: 41687, type: trojan, password: 74341a38-c634-492e-9385-50eb01dd59e4, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -840,206 +496,120 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1050,617 +620,359 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1676,206 +988,120 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _IR
+      - _CN
       - _US
       - _US 2
-      - _CN
-      - _CN 2
       - _US 3
+      - _US 4
+      - _US 5
+      - _US 6
+      - _JP
+      - _US 7
+      - _JP 2
+      - _CN 2
+      - _CA
+      - _US 8
       - _CN 3
-      - _TW
+      - _US 9
+      - _US 10
+      - _US 11
+      - _US 12
       - _CN 4
       - _CN 5
       - _CN 6
-      - _JP
+      - _US 13
+      - _US 14
       - _CN 7
       - _CN 8
       - _CN 9
-      - _US 4
-      - _CN 10
-      - _KR
-      - _CN 11
-      - _CN 12
-      - _CN 13
-      - _CN 14
-      - _US 5
-      - _US 6
-      - _CY
-      - _CN 15
-      - _US 7
-      - _US 8
-      - _US 9
-      - _CN 16
-      - _US 10
-      - _HK
-      - _HK 2
-      - _US 11
-      - _US 12
-      - _US 13
-      - _US 14
       - _US 15
-      - _CN 17
       - _US 16
+      - _GB
       - _US 17
-      - _NL
+      - undefined
+      - _CN 10
       - _US 18
       - _US 19
+      - _CN 11
+      - _CN 12
       - _US 20
+      - _CN 13
       - _US 21
-      - undefined
-      - _CN 18
       - _US 22
       - _US 23
-      - _AU
-      - _CN 19
-      - _CN 20
-      - _CN 21
       - _US 24
-      - _CN 22
+      - _CN 14
+      - _BZ
+      - _CN 15
       - _US 25
+      - _CN 16
+      - _BZ 2
       - _US 26
       - _US 27
       - _US 28
-      - _CN 23
-      - _BZ
+      - _CA 2
       - _US 29
       - _US 30
-      - _CN 24
       - _US 31
+      - _CN 17
       - _US 32
-      - _IR 2
-      - _HK 3
+      - _CN 18
       - _US 33
-      - _CN 25
-      - _CN 26
-      - _CN 27
-      - _TW 2
-      - _CA
+      - _CN 19
       - _US 34
       - _US 35
+      - _CN 20
       - _US 36
+      - _CN 21
       - _US 37
-      - _CA 2
+      - _CN 22
+      - undefined 2
       - _US 38
       - _US 39
-      - _CN 28
-      - _DE
       - _US 40
-      - _CN 29
-      - _JP 2
       - _US 41
       - _US 42
+      - _CN 23
       - _US 43
-      - _CN 30
       - _US 44
-      - undefined 2
       - _US 45
       - _US 46
       - _US 47
-      - _NL 2
+      - _CN 24
+      - _CN 25
+      - _CN 26
+      - _CN 27
       - _US 48
-      - _JP 3
-      - _JP 4
       - _US 49
-      - _CN 31
-      - _CN 32
       - _US 50
       - _US 51
-      - _CN 33
+      - _CN 28
       - _US 52
+      - _CN 29
+      - _CN 30
+      - _CN 31
       - _US 53
-      - _TW 3
+      - _CN 32
+      - _CN 33
+      - _JP 3
       - _CN 34
-      - _BZ 2
-      - _US 54
-      - _US 55
-      - _US 56
-      - _TW 4
-      - _US 57
-      - _JP 5
-      - _US 58
       - _CN 35
-      - _US 59
-      - _US 60
-      - _US 61
-      - _US 62
-      - _US 63
-      - _BZ 3
-      - _US 64
-      - _CA 3
-      - _US 65
-      - _US 66
-      - _US 67
       - _CN 36
-      - _US 68
-      - _JP 6
-      - _US 69
       - _CN 37
-      - _US 70
-      - _US 71
-      - _US 72
       - _CN 38
       - _CN 39
-      - _US 73
-      - _US 74
-      - _US 75
-      - _US 76
-      - _VN
-      - _NL 3
-      - _US 77
       - _CN 40
-      - _US 78
-      - _US 79
-      - _US 80
-      - _US 81
-      - _US 82
-      - _CA 4
-      - _US 83
       - _CN 41
       - _CN 42
       - _CN 43
-      - _US 84
-      - _AU 2
+      - _MU
+      - _US 54
       - _CN 44
       - _CN 45
-      - _US 85
       - _CN 46
-      - _JP 7
       - _CN 47
+      - _US 55
       - _CN 48
-      - _CN 49
-      - _SG
-      - _CN 50
-      - _CN 51
-      - _CN 52
-      - _US 86
-      - _CN 53
-      - _KR 2
-      - _CN 54
-      - _KR 3
-      - _CN 55
-      - _CN 56
-      - _CN 57
-      - _CN 58
-      - _CN 59
-      - _CN 60
-      - _CN 61
-      - _MU
-      - _US 87
-      - _US 88
-      - _DE 2
-      - _CN 62
-      - _CN 63
-      - _CN 64
-      - _CN 65
-      - _CN 66
-      - _CN 67
-      - _CN 68
-      - _CN 69
-      - _DE 3
-      - _JP 8
-      - _CN 70
-      - _CN 71
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
