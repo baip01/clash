@@ -5,208 +5,217 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _CN_电报频道 @pjrjzy, server: 117.164.185.221, port: 16308, type: vmess, uuid: c00f28c4-5312-3041-8dbc-cb8d9b98f862, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy, server: 203.30.190.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 2, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 3, server: hainan.sfjsq001.info, port: 33209, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 4, server: hainan.sfjsq001.info, port: 33208, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 5, server: 117.164.185.221, port: 16262, type: vmess, uuid: c00f28c4-5312-3041-8dbc-cb8d9b98f862, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 2, server: 203.30.191.3, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _SG_电报频道 @pjrjzy, server: 51.79.158.116, port: 10001, type: vmess, uuid: 6145787c-c492-11ed-afd9-db8a10d0c852, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: _SG_电报频道 @pjrjzy 2, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 2, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}, udp: true}
-  - {name: _HK_电报频道 @pjrjzy, server: b1.ss1011.top, port: 1507, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 3, server: 172.67.203.162, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 4, server: 172.66.44.197, port: 443, type: vmess, uuid: fa4cb529-3ac9-4268-bb04-ed4253813508, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mR17oBKzZ7, headers: {Host: d.pgypgykmoljklj.xyz}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 3, server: 203.30.191.10, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 2, server: 8.210.47.216, port: 43469, type: vmess, uuid: 163cc2ef-a4c8-4f48-9898-f8a7074d1947, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _TW_电报频道 @pjrjzy, server: polotw1.applebench.tech, port: 56568, type: vmess, uuid: 7ffd6009-0085-4b4e-9598-e62c133fbd21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 6, server: 34.wgong1.top, port: 52234, type: vmess, uuid: f0330805-d5d5-3cf2-95a2-2195ff5aaf9b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 7, server: hainan.sfjsq001.info, port: 33217, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: hainan.sfjsq001.info}}, udp: true}
-  - {name: undefined_电报频道 @pjrjzy, server: october.mytargoocloud.live, port: 80, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: jpm2.nascloudreve.live}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 8, server: 31.wgong1.top, port: 52231, type: vmess, uuid: 51541205-a5d5-33d1-a915-f885cfc229e1, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 3, server: hk3.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 8216e1fd-7f67-440d-9a63-51d0f6c38b10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk3.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 9, server: in-jp-1.iivvppnn.info, port: 38301, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: www.ivpnpro.net}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 10, server: hk6.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: 8216e1fd-7f67-440d-9a63-51d0f6c38b10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk6.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 11, server: 117.164.185.221, port: 16260, type: vmess, uuid: c00f28c4-5312-3041-8dbc-cb8d9b98f862, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 4, server: 47.242.225.177, port: 28067, type: vmess, uuid: e61f48ee-36fa-418f-a4f2-5b014afa8dd5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 12, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 13, server: hainan.sfjsq001.info, port: 33214, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 14, server: hainan.sfjsq001.info, port: 33910, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 5, server: 8.218.225.146, port: 25076, type: vmess, uuid: de035cbd-9c64-45b3-8485-bae38a33bd3b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 15, server: hainan.sfjsq001.info, port: 33216, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: hainan.sfjsq001.info}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 4, server: 203.30.188.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 5, server: quranweb12.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb12.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 6, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 7, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
-  - {name: _SG_电报频道 @pjrjzy 3, server: 134.122.166.140, port: 2390, type: vmess, uuid: 32f0c996-f0f8-3103-90a6-230b98ac384e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _AM_电报频道 @pjrjzy, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 8, server: sg.718398.xyz, port: 8443, type: vmess, uuid: be35f39f-571d-4240-8ab2-8055aae3a53e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ssvcus, headers: {Host: sg.718398.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 9, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 10, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 11, server: 104.18.3.2, port: 80, type: vmess, uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: idnusanet.vpnexecutive.my.id}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 12, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 16, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 5, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 6, server: 203.30.190.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 13, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 14, server: v2ray.wefuckgfw.tk, port: 2053, type: vmess, uuid: c229e6b9-0f0f-4045-af99-a190fbb872e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /o2qD59jL/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 6, server: 8.218.227.58, port: 57005, type: vmess, uuid: fcb1a085-2c74-4ed5-829c-bcff003cfbad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _CA_电报频道 @pjrjzy, server: 23.227.38.11, port: 443, type: vmess, uuid: 9379fea0-006d-4fd3-8e35-d45a5af72aa2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /UMW36262, headers: {Host: frgt1.ssr-free2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 15, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 16, server: 172.67.199.34, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 17, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 17, server: 162.159.133.98, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
-  - {name: _DE_电报频道 @pjrjzy, server: 116.203.99.196, port: 443, type: vmess, uuid: 74a21beb-b004-43e0-b9ed-0e1aab698adc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _NL_电报频道 @pjrjzy, server: 46.182.107.56, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 18, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 19, server: 198.41.203.6, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 20, server: ming2.kiwireich.com, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: ming2.kiwireich.com}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 7, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 21, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 22, server: quranweb23.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb23.xyz}}, udp: true}
-  - {name: _IR_电报频道 @pjrjzy, server: s3.vipvps.co, port: 59810, type: vmess, uuid: 195bc0b4-99a6-4e05-adfc-1707f1151975, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s3.vipvps.co}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 23, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 24, server: quranweb26.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb26.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 25, server: 23.224.190.229, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 7, server: hklv.oxcc.eu.org, port: 25105, type: vmess, uuid: 72eff4b9-996c-4010-fcbe-ba4192252ed0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hklv.oxcc.eu.org}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 26, server: us1.sharecentrepro.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 27, server: quranweb6.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb6.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 28, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 29, server: holyquran19.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 30, server: cf-topspeedone.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 31, server: cf-topspeedvv3.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedvv3.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 32, server: vin1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vin1.0bad.com}}, udp: true}
-  - {name: _CY_电报频道 @pjrjzy, server: 203.24.108.9, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy, server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12343, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm2.targoocloud.live}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 2, server: 47.104.237.32, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CY_电报频道 @pjrjzy, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 2, server: 148.59.74.236, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 3, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 4, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 2, server: 203.30.189.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 5, server: quranweb41.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb41.xyz}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 3, server: 203.30.191.20, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 6, server: 104.18.3.2, port: 80, type: vmess, uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: idnusanet.vpnexecutive.my.id}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 7, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 8, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 4, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 9, server: cf-topspeedvv3.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedvv3.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 10, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 11, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vus5.0bad.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 12, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 13, server: quranweb9.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb9.xyz}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 3, server: 34.wgong1.top, port: 52234, type: vmess, uuid: f0330805-d5d5-3cf2-95a2-2195ff5aaf9b, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 14, server: 104.21.94.37, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 15, server: pm.motori.pw, port: 8880, type: vmess, uuid: d1c59699-1874-49f1-b9ba-bbbfd7968075, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pm.motori.pw}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 16, server: quranweb12.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb12.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 17, server: new8.hucloud-dns.xyz, port: 443, type: vmess, uuid: f11786fc-abf0-40e8-8177-992c699cc95f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /0fa5cea95e7/, headers: {Host: new8.hucloud-dns.xyz}}, udp: true}
+  - {name: _KR_电报频道 @pjrjzy, server: 0kxedm1x8q8lksmj06.xingbayun.buzz, port: 2001, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 18, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 4, server: hainan.sfjsq001.info, port: 33209, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 19, server: dp2.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 20, server: holyquran11.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran11.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 21, server: sogood.linefriends.com, port: 443, type: vmess, uuid: acd17818-d434-49ae-80a6-d194bcaf6392, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vvip, headers: {Host: sgray.jagoan.vip}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 22, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 23, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 24, server: sogood.linefriends.com, port: 443, type: vmess, uuid: acd17818-d434-49ae-80a6-d194bcaf6392, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vvip, headers: {Host: sgray.jagoan.vip}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 25, server: kh1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 26, server: holyquran19.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}, udp: true}
+  - {name: undefined_电报频道 @pjrjzy, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 27, server: 172.67.136.150, port: 443, type: vmess, uuid: 44bab30b-d1da-40b4-b65d-e0a3a98c0de6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: ss.239000.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 28, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 29, server: 198.41.203.6, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 30, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 31, server: vin1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vin1.0bad.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 32, server: v2ray.wefuckgfw.tk, port: 2053, type: vmess, uuid: c229e6b9-0f0f-4045-af99-a190fbb872e9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /o2qD59jL/, headers: {Host: v2ray.wefuckgfw.tk}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 5, server: hainan.sfjsq001.info, port: 33216, type: vmess, uuid: 7259955f-09db-3ce1-8325-8814d4784280, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: hainan.sfjsq001.info}}, udp: true}
   - {name: _US_电报频道 @pjrjzy 33, server: 104.21.234.238, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 34, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 35, server: pyptom.cf, port: 443, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: pyptom.cf}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 36, server: cf-topspeedoneplus.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 37, server: quranweb40.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb40.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 38, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 39, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 40, server: 104.16.176.44, port: 443, type: vmess, uuid: c002de50-e64e-4328-b98a-fae82bdcafa4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: de-v.sshmax.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 41, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 42, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: cae6201f-50fe-4895-8930-841f1d8c4eb7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 43, server: jp03.cctvvip.ml, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 44, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 45, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 46, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 47, server: kh1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: kh1.scproxy.top}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 48, server: cf-topspeed.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeed.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 49, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 8, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 9, server: 203.30.191.1, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 50, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 51, server: dp1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 52, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 53, server: hohm.microsoft.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 18, server: hainan.sfjsq001.info, port: 33216, type: vmess, uuid: e650d388-c1a8-313c-b877-cd6e9465ec64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /app/dytv.m3u8, headers: {Host: douyu.tv}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 54, server: quranweb41.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb41.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 55, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 10, server: 203.30.188.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 56, server: 172.67.199.34, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 57, server: 172.64.150.150, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 58, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 59, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 60, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
-  - {name: _CA_电报频道 @pjrjzy 2, server: 23.227.38.23, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 61, server: freequranbook.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: freequranbook.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 62, server: quran-audio4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio4.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 63, server: cf.bakapie.cf, port: 2096, type: vmess, uuid: 72fd33d5-5c1a-4193-96c6-665fc20b71c1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /index, headers: {Host: 1076a8af.ikunxiao.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 34, server: pyptom.cf, port: 443, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: pyptom.cf}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 35, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 36, server: cf-topspeedone.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 37, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: _HK_电报频道 @pjrjzy, server: 0kxedm1x8q8lksmj02.xingbayun.buzz, port: 2001, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _AM_电报频道 @pjrjzy, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 38, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 39, server: us1.sharecentrepro.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
+  - {name: _AM_电报频道 @pjrjzy 2, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 3, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 40, server: 104.21.234.238, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 41, server: freequranbook.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: freequranbook.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 42, server: cf-topspeedv9.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedv9.uk}}, udp: true}
+  - {name: _HK_电报频道 @pjrjzy 2, server: 0kxedm1x8q8lksmj04.xingbayun.buzz, port: 4001, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 43, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 44, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 45, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 46, server: cf-topspeed.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeed.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 47, server: 148.59.74.200, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 48, server: ca-nnc.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca-nnc.ilovescp.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 49, server: holyquran11.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran11.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 50, server: cf-topspeed.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeed.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 51, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 52, server: 172.64.150.150, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 5, server: 203.30.188.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 53, server: 104.21.86.52, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 54, server: pyptom.cf, port: 443, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: pyptom.cf}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 55, server: cf-topspeedoneplus.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}, udp: true}
+  - {name: _RO_电报频道 @pjrjzy, server: legenderyserversirn.ddns.net, port: 443, type: vmess, uuid: DDB05F7A-A4A3-4F34-B730-FCC7ACB3B17F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 56, server: quranweb6.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb6.xyz}}, udp: true}
+  - {name: _RO_电报频道 @pjrjzy 2, server: ping1.yebrahimi.ir, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedone.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 57, server: 104.21.234.238, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 58, server: generates-guitar-comparing-un.trycloudflare.com, port: 443, type: vmess, uuid: ef0a75a6-bd97-11ed-afa1-0242ac120002, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: generates-guitar-comparing-un.trycloudflare.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 59, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 60, server: us1.sharecentrepro.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 61, server: fr1.trump2023.org, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 62, server: freequranbook.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: freequranbook.uk}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 6, server: 203.30.188.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _RO_电报频道 @pjrjzy 3, server: 45.85.119.121, port: 443, type: vmess, uuid: 5632cdd9-910b-4976-8195-6111a68b6336, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: gemws.mainssh.xyz}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 7, server: 203.30.190.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 63, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}, udp: true}
   - {name: _US_电报频道 @pjrjzy 64, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}, udp: true}
-  - {name: _CR_电报频道 @pjrjzy, server: 190.93.245.1, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 65, server: quranweb19.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb19.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 66, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 67, server: 143.42.110.81, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 68, server: cf-topspeed.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeed.uk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 69, server: 172.67.199.31, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 70, server: uk1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 11, server: 203.30.188.189, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 71, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 72, server: quranweb9.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb9.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 73, server: holyquran11.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran11.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 74, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 75, server: st.acrouri.tk, port: 443, type: vmess, uuid: 295df99f-ad0e-4973-93fe-edb90270f7a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: st.acrouri.tk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 76, server: 172.66.44.197, port: 443, type: vmess, uuid: fa4cb529-3ac9-4268-bb04-ed4253813508, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /mR17oBKzZ7, headers: {Host: d.pgypgykmoljklj.xyz}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 19, server: 36.133.171.209, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE_电报频道 @pjrjzy 2, server: 89.163.157.146, port: 443, type: vmess, uuid: b8aedf50-c4f5-4255-b73d-3779db661d70, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 20, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-AWKJ}}, udp: true}
-  - {name: _CA_电报频道 @pjrjzy 3, server: 23.227.38.27, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 21, server: 36.134.16.190, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CA_电报频道 @pjrjzy 4, server: 23.227.38.38, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 77, server: holyquran18.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran18.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 78, server: generates-guitar-comparing-un.trycloudflare.com, port: 443, type: vmess, uuid: ef0a75a6-bd97-11ed-afa1-0242ac120002, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: generates-guitar-comparing-un.trycloudflare.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 79, server: holyquran11.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran11.store}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 80, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm1.targoocloud.live}}, udp: true}
-  - {name: _CY_电报频道 @pjrjzy 2, server: 203.24.108.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 81, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm2.targoocloud.live}}, udp: true}
-  - {name: _CY_电报频道 @pjrjzy 3, server: 203.24.108.8, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 82, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm1.targoocloud.live}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 83, server: 172.67.219.5, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 84, server: germany1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /XQ2WCa29jfDMGBcbnQ, headers: {Host: germany1.yj2022.ga}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 22, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 85, server: v2ray.online, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: undefined_电报频道 @pjrjzy 2, server: cf.fovi.tk, port: 2053, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /eisasqa, headers: {Host: foxpol.fovi.tk}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 12, server: 203.30.191.1, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
-  - {name: _AM_电报频道 @pjrjzy 2, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 86, server: 104.21.94.37, port: 443, type: vmess, uuid: 00BBF5B8-173E-6818-9927-5AD1AA073C7D, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.v2ray.online}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 87, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 88, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 89, server: dp2.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 90, server: replit.ahsorathiya.tk, port: 443, type: vmess, uuid: 13f64498-354e-447b-b963-d105d9865cd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /13f64498-354e-447b-b963-d105d9865cd1-vm, headers: {Host: replit.ahsorathiya.tk}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 91, server: 104.233.161.236, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 8, server: b1.ss1011.top, port: 1509, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _TW_电报频道 @pjrjzy 2, server: polotw1.applebench.tech, port: 56568, type: vmess, uuid: 7ffd6009-0085-4b4e-9598-e62c133fbd21, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 92, server: france1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /E86414F638E11, headers: {Host: france1.yj2022.ga}}, udp: true}
-  - {name: _HK_电报频道 @pjrjzy 9, server: b1.ss1011.top, port: 1506, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 13, server: 203.30.189.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 93, server: nl1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/nl1?ed=2048", headers: {Host: nl1.pqjc.buzz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 94, server: vjp3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /chat, headers: {Host: vjp3.0bad.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 95, server: 172.67.199.34, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 96, server: la.awsbest.com, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 97, server: quranweb4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb4.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 98, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm2.targoocloud.live}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 23, server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 14, server: 203.30.190.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _SE_电报频道 @pjrjzy, server: shopify.co.uk, port: 443, type: vmess, uuid: be35f39f-571d-4240-8ab2-8055aae3a53e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /retreyte6, headers: {Host: fr.seeworld.pro}}, udp: true}
-  - {name: _CA_电报频道 @pjrjzy 5, server: 23.227.38.25, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 65, server: quranweb40.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb40.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 66, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm1.targoocloud.live}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 67, server: quranweb4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb4.xyz}}, udp: true}
+  - {name: _AM_电报频道 @pjrjzy 3, server: 185.162.228.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
   - {name: _UA_电报频道 @pjrjzy, server: 45.80.111.53, port: 443, type: vmess, uuid: 0b873cff-11ab-4716-c41a-04f886135091, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /suzhihan.eu.org/roewesu, headers: {Host: 200.aquabazi.site}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 99, server: sogood.linefriends.com, port: 443, type: vmess, uuid: acd17818-d434-49ae-80a6-d194bcaf6392, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vvip, headers: {Host: sgray.jagoan.vip}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 100, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 24, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 101, server: 172.67.136.81, port: 443, type: vmess, uuid: 5eba5b30-7c4a-419c-c1b8-cafd0b4d4eee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /123, headers: {Host: eu4.isi.lol}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 102, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
-  - {name: _RO_电报频道 @pjrjzy, server: 45.12.30.192, port: 443, type: vmess, uuid: EB176736-29D0-484E-8464-28547013A162, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 103, server: 172.67.136.150, port: 443, type: vmess, uuid: 44bab30b-d1da-40b4-b65d-e0a3a98c0de6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmessws, headers: {Host: ss.239000.xyz}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 104, server: finland1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /WKtzeN11GLqwVNBTp9mX, headers: {Host: finland1.yj2022.ga}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 105, server: fr1.pqjc.buzz, port: 443, type: vmess, uuid: 27509613-bbd5-403a-868c-8022d36aa565, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/fr1?ed=2048", headers: {Host: fr1.pqjc.buzz}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 25, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 26, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
-  - {name: _US_电报频道 @pjrjzy 106, server: germany1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /XQ2WCa29jfDMGBcbnQ, headers: {Host: germany1.yj2022.ga}}, udp: true}
-  - {name: _BZ_电报频道 @pjrjzy 15, server: 203.30.191.9, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
-  - {name: _RO_电报频道 @pjrjzy 2, server: 45.12.30.192, port: 443, type: vmess, uuid: EB176736-29D0-484E-8464-28547013A162, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: _AM_电报频道 @pjrjzy 3, server: 185.162.228.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
-  - {name: _KR_电报频道 @pjrjzy, server: 131.186.21.62, port: 4433, type: ss, cipher: aes-256-gcm, password: yy595721, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 27, server: v3-jp.aliyun-obsd.xyz, port: 5620, type: ss, cipher: aes-128-gcm, password: f2ae2629-89da-452f-b1f6-544666600bb4, udp: true}
-  - {name: _NL_电报频道 @pjrjzy 2, server: 172.99.188.99, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _US_电报频道 @pjrjzy 107, server: fuck5.lianpi.xyz, port: 59019, type: ss, cipher: chacha20-ietf-poly1305, password: 9d1864d2-6bf2-4a0c-9068-2e48e5f8a50f, udp: true}
-  - {name: _NL_电报频道 @pjrjzy 3, server: ak1663.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _NL_电报频道 @pjrjzy 4, server: 172.99.188.99, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 28, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 29, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24siga03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 30, server: hn.xiaohouzi.club, port: 18733, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24ajpn03.xiaohouzi.club", skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 31, server: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, port: 12343, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv2iwahxwawhooiixzawx.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 108, server: 148.59.74.196, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _KR_电报频道 @pjrjzy 2, server: oracle.blowm1k.club, port: 443, type: trojan, password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498, sni: oracle.blowm1k.club, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 109, server: 148.59.74.236, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 32, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12347, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
-  - {name: _VN_电报频道 @pjrjzy, server: 103.195.236.24, port: 443, type: trojan, password: f97d3064-021f-40f2-9d94-5bb59e347939, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 68, server: 141.193.213.20, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 69, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 70, server: cf-topspeed.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeed.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 71, server: quranweb41.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb41.xyz}}, udp: true}
+  - {name: _CA_电报频道 @pjrjzy, server: 23.227.38.27, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 72, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 73, server: cf.noaries.de, port: 8080, type: vmess, uuid: ba1b14e5-33ad-46df-8116-a2935e712a2f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 74, server: cf-topspeedoneplus.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}, udp: true}
+  - {name: _AM_电报频道 @pjrjzy 4, server: 185.162.228.110, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 75, server: dp1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 76, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 77, server: holyquran4.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran4.store}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 8, server: 203.30.190.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 78, server: quran-audio4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio4.xyz}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 6, server: 39.103.165.178, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 4, server: 203.24.108.8, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 79, server: holyquran19.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 80, server: cf-topspeedonline.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedonline.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 81, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: _CR_电报频道 @pjrjzy, server: 190.93.245.1, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: clash1.ssr-free2.xyz}}, udp: true}
   - {name: _TR_电报频道 @pjrjzy, server: 194.146.26.40, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _US_电报频道 @pjrjzy 110, server: 146.19.215.165, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _MO_电报频道 @pjrjzy, server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: true, udp: true}
-  - {name: _CN_电报频道 @pjrjzy 33, server: tw1.vfun.icu, port: 450, type: ssr, cipher: aes-256-cfb, password: vyunme, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 17422:TTp0SX, obfs-param: ab93117422.jd.hk, udp: true}
+  - {name: _US_电报频道 @pjrjzy 82, server: 154.v2ray3.xyz, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 5, server: 203.24.108.8, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 6, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 83, server: 172.67.135.57, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 84, server: jp03.cctvvip.ml, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 7, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 85, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm2.targoocloud.live}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 86, server: 172.64.150.150, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 9, server: 203.30.191.9, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 7, server: 203.24.108.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 10, server: 203.30.188.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 87, server: 148.59.74.196, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 11, server: 203.30.190.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 88, server: surongwei.eu.org, port: 443, type: vmess, uuid: 6093eefb-7ab6-41df-aba0-d5fa58147e10, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /reffs7y26g0ua, headers: {Host: surongwei.eu.org}}, udp: true}
+  - {name: _KR_电报频道 @pjrjzy 2, server: 131.186.21.62, port: 4433, type: ss, cipher: aes-256-gcm, password: yy595721, udp: true}
+  - {name: _SG_电报频道 @pjrjzy, server: 134.122.166.140, port: 2390, type: vmess, uuid: 32f0c996-f0f8-3103-90a6-230b98ac384e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 89, server: 198.41.203.6, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 12, server: 203.30.190.1, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: 154.v2ray3.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 90, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
+  - {name: _AM_电报频道 @pjrjzy 5, server: 185.162.228.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 13, server: 203.30.189.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 91, server: holyquran18.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran18.store}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 14, server: 203.30.189.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _NL_电报频道 @pjrjzy, server: mtnx.ircf.space, port: 2096, type: vmess, uuid: 4a92ff9c-7940-4dba-e5de-22df9c20c798, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nodejs, headers: {Host: social.progbyrazyar.ir}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 92, server: 141.193.213.21, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _RO_电报频道 @pjrjzy 4, server: 45.85.119.121, port: 443, type: vmess, uuid: 5632cdd9-910b-4976-8195-6111a68b6336, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: gemws.mainssh.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 93, server: us1.sharecentrepro.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: us1.sharecentrepro.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 94, server: quranweb26.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb26.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 95, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 96, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 97, server: pyptom.cf, port: 443, type: vmess, uuid: 46bfdb59-83c6-4710-877e-c809b5a90dff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnneo, headers: {Host: pyptom.cf}}, udp: true}
+  - {name: _SG_电报频道 @pjrjzy 2, server: 0kxedm1x8q8lksmj18.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _TW_电报频道 @pjrjzy, server: azgy001.xibai6.top, port: 20788, type: trojan, password: 78af6d6d-6de7-3a1f-a969-c39077fb47bf, sni: ssl.ssl12.xyz, skip-cert-verify: true, udp: true}
+  - {name: _DE_电报频道 @pjrjzy, server: 89.163.157.146, port: 443, type: vmess, uuid: b8aedf50-c4f5-4255-b73d-3779db661d70, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 98, server: holyquran11.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran11.store}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 8, server: 36.134.16.190, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CA_电报频道 @pjrjzy 2, server: 23.227.38.38, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _CA_电报频道 @pjrjzy 3, server: 23.227.38.27, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 99, server: 148.59.74.236, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 100, server: quranweb9.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb9.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 101, server: la.awsbest.com, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 102, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 103, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: sgm2.targoocloud.live}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 104, server: quranweb4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb4.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 105, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 15, server: 203.30.191.3, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _HK_电报频道 @pjrjzy 3, server: b1.ss1011.top, port: 1506, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 106, server: uk1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 107, server: st.acrouri.tk, port: 443, type: vmess, uuid: 295df99f-ad0e-4973-93fe-edb90270f7a6, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: st.acrouri.tk}}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 8, server: 203.24.108.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _TR_电报频道 @pjrjzy 2, server: 194.146.26.40, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 9, server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 108, server: 104.16.176.44, port: 443, type: vmess, uuid: c002de50-e64e-4328-b98a-fae82bdcafa4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: de-v.sshmax.xyz}}, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 16, server: 203.30.190.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 109, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 110, server: quranweb19.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb19.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 111, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm2.targoocloud.live}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 112, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 113, server: main.millionaireaisle.com, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 114, server: jp03.cctvvip.ml, port: 443, type: vmess, uuid: 128a73ee-a5a3-4dce-a832-5c3f60841032, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv13.m3u8, headers: {Host: jp03.cctvvip.ml}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 115, server: 77.v2ray1.xyz, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _SG_电报频道 @pjrjzy 3, server: 0kxedm1x8q8lksmj17.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 10, server: hn.xiaohouzi.club, port: 19023, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24%24siga03.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 11, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-AWKJ}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 116, server: new8.hucloud-dns.xyz, port: 443, type: vmess, uuid: f11786fc-abf0-40e8-8177-992c699cc95f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /0fa5cea95e7/, headers: {Host: new8.hucloud-dns.xyz}}, udp: true}
+  - {name: _KR_电报频道 @pjrjzy 3, server: oracle.blowm1k.club, port: 443, type: trojan, password: a98f320a-f8c5-5bc0-be60-1bf4b7be9498, sni: oracle.blowm1k.club, skip-cert-verify: true, udp: true}
+  - {name: _BZ_电报频道 @pjrjzy 17, server: 203.30.191.10, port: 443, type: vmess, uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /AUIKN8AU, headers: {Host: oplg1.cfcdn2.xyz}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 12, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 13, server: 36.133.171.209, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 117, server: generates-guitar-comparing-un.trycloudflare.com, port: 443, type: vmess, uuid: ef0a75a6-bd97-11ed-afa1-0242ac120002, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: generates-guitar-comparing-un.trycloudflare.com}}, udp: true}
+  - {name: _RO_电报频道 @pjrjzy 5, server: legenderyserversirn.ddns.net, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedvv2.uk}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 118, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}, udp: true}
+  - {name: _JP_电报频道 @pjrjzy, server: 0kxedm1x8q8lksmj12.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _KR_电报频道 @pjrjzy 4, server: 0kxedm1x8q8lksmj06.xingbayun.buzz, port: 2001, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 119, server: 143.42.110.81, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 120, server: quranweb23.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb23.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 121, server: ming2.kiwireich.com, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ray, headers: {Host: ming2.kiwireich.com}}, udp: true}
+  - {name: _HK_电报频道 @pjrjzy 4, server: b1.ss1011.top, port: 1509, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 122, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 123, server: uk1.scproxy.top, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
+  - {name: _NL_电报频道 @pjrjzy 2, server: 46.182.107.56, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/353021140201}, udp: true}
+  - {name: _CY_电报频道 @pjrjzy 9, server: 203.24.108.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 14, server: iplc.xiaohouzi.club, port: 20037, type: trojan, password: 0f098bb2-9fad-3cc3-8acf-2a3268c1eb27, sni: iplc.xiaohouzi.club, skip-cert-verify: true, udp: true}
+  - {name: _US_电报频道 @pjrjzy 124, server: project.mytargoocloud.live, port: 443, type: vmess, uuid: d7c91c45-8f30-4175-b78b-c18ccf6a1fa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: sgm1.targoocloud.live}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 125, server: cdn.wuki.moe, port: 80, type: vmess, uuid: 747695c7-1ed8-44d1-a1a0-6b1b162748ca, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/sbga?ed=2048", headers: {Host: woi-eu7.misakano.ml}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 126, server: 148.59.74.196, port: 443, type: trojan, password: 2ea5fc44-bd38-4fb0-a9b9-88c83fc56622, sni: 4-193-105-141.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _AM_电报频道 @pjrjzy 6, server: 185.162.228.2, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: 77.v2ray1.xyz}}, udp: true}
+  - {name: _US_电报频道 @pjrjzy 127, server: 172.64.154.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 15, server: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, port: 12347, type: trojan, password: 001a5927-bcf7-368a-8a4d-cb8c2fd6aab5, sni: lv3oiwdaxsaowhdnjkzxw.occwaszxjjhwx.cyou, skip-cert-verify: true, udp: true}
+  - {name: _SG_电报频道 @pjrjzy 4, server: 0kxedm1x8q8lksmj19.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _SG_电报频道 @pjrjzy 5, server: 0kxedm1x8q8lksmj20.xingbayun.buzz, port: 443, type: vmess, uuid: 399004bf-eaf0-4532-b139-ca4e79c5e27b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 16, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 17, server: data-hk-v2.shwjfkw.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v2.shwjfkw.cn}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 18, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 19, server: hn.xiaohouzi.club, port: 18733, type: trojan, password: 21e10785-99c6-316e-a184-a03384ee06e5, sni: "%24ajpn03.xiaohouzi.club", skip-cert-verify: true, udp: true}
+  - {name: _CN_电报频道 @pjrjzy 20, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}, udp: true}
+  - {name: _GB_电报频道 @pjrjzy, server: kt.p.mkitty.top, port: 443, type: trojan, password: 45c40b80-3d85-47aa-b6e4-3e0e2a066842, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -214,89 +223,65 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -304,206 +289,215 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -511,117 +505,150 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -629,89 +656,65 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -719,117 +722,150 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -849,89 +885,65 @@ proxy-groups:
       - ♻️ 自动选择
       - 🎯 全球直连
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -939,117 +951,150 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1061,89 +1106,65 @@ proxy-groups:
       - 🎯 全球直连
       - 🔰 节点选择
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -1151,206 +1172,215 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -1358,117 +1388,150 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -1476,89 +1539,65 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -1566,117 +1605,150 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1693,89 +1765,65 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - _CN_电报频道 @pjrjzy
-      - _BZ_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 2
-      - _SG_电报频道 @pjrjzy
-      - _SG_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy
+      - _BZ_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 2
-      - _HK_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 4
-      - _BZ_电报频道 @pjrjzy 3
-      - _HK_电报频道 @pjrjzy 2
-      - _TW_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 6
-      - _CN_电报频道 @pjrjzy 7
-      - undefined_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 8
-      - _HK_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 9
-      - _CN_电报频道 @pjrjzy 10
-      - _CN_电报频道 @pjrjzy 11
-      - _HK_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 13
-      - _CN_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 5
-      - _CN_电报频道 @pjrjzy 15
-      - _BZ_电报频道 @pjrjzy 4
+      - _BZ_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 5
+      - _BZ_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 7
-      - _SG_电报频道 @pjrjzy 3
-      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 8
+      - _BZ_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 12
-      - _CN_电报频道 @pjrjzy 16
-      - _BZ_电报频道 @pjrjzy 5
-      - _BZ_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 13
+      - _CN_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 14
-      - _HK_电报频道 @pjrjzy 6
-      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 15
       - _US_电报频道 @pjrjzy 16
-      - _CN_电报频道 @pjrjzy 17
       - _US_电报频道 @pjrjzy 17
-      - _DE_电报频道 @pjrjzy
-      - _NL_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 19
+      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 20
-      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 21
       - _US_电报频道 @pjrjzy 22
-      - _IR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 23
       - _US_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 25
-      - _HK_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 26
+      - undefined_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 27
       - _US_电报频道 @pjrjzy 28
       - _US_电报频道 @pjrjzy 29
       - _US_电报频道 @pjrjzy 30
       - _US_电报频道 @pjrjzy 31
       - _US_电报频道 @pjrjzy 32
-      - _CY_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 33
       - _US_电报频道 @pjrjzy 34
       - _US_电报频道 @pjrjzy 35
       - _US_电报频道 @pjrjzy 36
       - _US_电报频道 @pjrjzy 37
+      - _HK_电报频道 @pjrjzy
+      - _AM_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 38
       - _US_电报频道 @pjrjzy 39
+      - _AM_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 40
       - _US_电报频道 @pjrjzy 41
       - _US_电报频道 @pjrjzy 42
+      - _HK_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 43
       - _US_电报频道 @pjrjzy 44
       - _US_电报频道 @pjrjzy 45
@@ -1783,117 +1831,150 @@ proxy-groups:
       - _US_电报频道 @pjrjzy 47
       - _US_电报频道 @pjrjzy 48
       - _US_电报频道 @pjrjzy 49
-      - _BZ_电报频道 @pjrjzy 8
-      - _BZ_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 50
       - _US_电报频道 @pjrjzy 51
       - _US_电报频道 @pjrjzy 52
+      - _BZ_电报频道 @pjrjzy 5
       - _US_电报频道 @pjrjzy 53
-      - _CN_电报频道 @pjrjzy 18
       - _US_电报频道 @pjrjzy 54
       - _US_电报频道 @pjrjzy 55
-      - _BZ_电报频道 @pjrjzy 10
+      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 56
+      - _RO_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 57
       - _US_电报频道 @pjrjzy 58
       - _US_电报频道 @pjrjzy 59
       - _US_电报频道 @pjrjzy 60
-      - _CA_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 61
       - _US_电报频道 @pjrjzy 62
+      - _BZ_电报频道 @pjrjzy 6
+      - _RO_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 63
       - _US_电报频道 @pjrjzy 64
-      - _CR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 65
       - _US_电报频道 @pjrjzy 66
       - _US_电报频道 @pjrjzy 67
+      - _AM_电报频道 @pjrjzy 3
+      - _UA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 68
       - _US_电报频道 @pjrjzy 69
       - _US_电报频道 @pjrjzy 70
-      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 71
+      - _CA_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 72
       - _US_电报频道 @pjrjzy 73
       - _US_电报频道 @pjrjzy 74
+      - _AM_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 75
       - _US_电报频道 @pjrjzy 76
-      - _CN_电报频道 @pjrjzy 19
-      - _DE_电报频道 @pjrjzy 2
-      - _CN_电报频道 @pjrjzy 20
-      - _CA_电报频道 @pjrjzy 3
-      - _CN_电报频道 @pjrjzy 21
-      - _CA_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 77
+      - _BZ_电报频道 @pjrjzy 8
       - _US_电报频道 @pjrjzy 78
+      - _CN_电报频道 @pjrjzy 6
+      - _CY_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 79
       - _US_电报频道 @pjrjzy 80
-      - _CY_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 81
-      - _CY_电报频道 @pjrjzy 3
+      - _CR_电报频道 @pjrjzy
+      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 82
+      - _CY_电报频道 @pjrjzy 5
+      - _CY_电报频道 @pjrjzy 6
       - _US_电报频道 @pjrjzy 83
       - _US_电报频道 @pjrjzy 84
-      - _CN_电报频道 @pjrjzy 22
+      - _CN_电报频道 @pjrjzy 7
       - _US_电报频道 @pjrjzy 85
-      - undefined_电报频道 @pjrjzy 2
-      - _BZ_电报频道 @pjrjzy 12
-      - _AM_电报频道 @pjrjzy 2
       - _US_电报频道 @pjrjzy 86
+      - _BZ_电报频道 @pjrjzy 9
+      - _CY_电报频道 @pjrjzy 7
+      - _BZ_电报频道 @pjrjzy 10
       - _US_电报频道 @pjrjzy 87
+      - _BZ_电报频道 @pjrjzy 11
       - _US_电报频道 @pjrjzy 88
+      - _KR_电报频道 @pjrjzy 2
+      - _SG_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 89
+      - _BZ_电报频道 @pjrjzy 12
       - _US_电报频道 @pjrjzy 90
-      - _US_电报频道 @pjrjzy 91
-      - _HK_电报频道 @pjrjzy 8
-      - _TW_电报频道 @pjrjzy 2
-      - _US_电报频道 @pjrjzy 92
-      - _HK_电报频道 @pjrjzy 9
+      - _AM_电报频道 @pjrjzy 5
       - _BZ_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 91
+      - _BZ_电报频道 @pjrjzy 14
+      - _NL_电报频道 @pjrjzy
+      - _US_电报频道 @pjrjzy 92
+      - _RO_电报频道 @pjrjzy 4
       - _US_电报频道 @pjrjzy 93
       - _US_电报频道 @pjrjzy 94
       - _US_电报频道 @pjrjzy 95
       - _US_电报频道 @pjrjzy 96
       - _US_电报频道 @pjrjzy 97
+      - _SG_电报频道 @pjrjzy 2
+      - _TW_电报频道 @pjrjzy
+      - _DE_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 98
-      - _CN_电报频道 @pjrjzy 23
-      - _BZ_电报频道 @pjrjzy 14
-      - _SE_电报频道 @pjrjzy
-      - _CA_电报频道 @pjrjzy 5
-      - _UA_电报频道 @pjrjzy
+      - _CN_电报频道 @pjrjzy 8
+      - _CA_电报频道 @pjrjzy 2
+      - _CA_电报频道 @pjrjzy 3
       - _US_电报频道 @pjrjzy 99
       - _US_电报频道 @pjrjzy 100
-      - _CN_电报频道 @pjrjzy 24
       - _US_电报频道 @pjrjzy 101
       - _US_电报频道 @pjrjzy 102
-      - _RO_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 103
       - _US_电报频道 @pjrjzy 104
       - _US_电报频道 @pjrjzy 105
-      - _CN_电报频道 @pjrjzy 25
-      - _CN_电报频道 @pjrjzy 26
-      - _US_电报频道 @pjrjzy 106
       - _BZ_电报频道 @pjrjzy 15
-      - _RO_电报频道 @pjrjzy 2
-      - _AM_电报频道 @pjrjzy 3
-      - _KR_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 27
-      - _NL_电报频道 @pjrjzy 2
+      - _HK_电报频道 @pjrjzy 3
+      - _US_电报频道 @pjrjzy 106
       - _US_电报频道 @pjrjzy 107
-      - _NL_电报频道 @pjrjzy 3
-      - _NL_电报频道 @pjrjzy 4
-      - _CN_电报频道 @pjrjzy 28
-      - _CN_电报频道 @pjrjzy 29
-      - _CN_电报频道 @pjrjzy 30
-      - _CN_电报频道 @pjrjzy 31
+      - _CY_电报频道 @pjrjzy 8
+      - _TR_电报频道 @pjrjzy 2
+      - _CN_电报频道 @pjrjzy 9
       - _US_电报频道 @pjrjzy 108
-      - _KR_电报频道 @pjrjzy 2
+      - _BZ_电报频道 @pjrjzy 16
       - _US_电报频道 @pjrjzy 109
-      - _CN_电报频道 @pjrjzy 32
-      - _VN_电报频道 @pjrjzy
-      - _TR_电报频道 @pjrjzy
       - _US_电报频道 @pjrjzy 110
-      - _MO_电报频道 @pjrjzy
-      - _CN_电报频道 @pjrjzy 33
+      - _US_电报频道 @pjrjzy 111
+      - _US_电报频道 @pjrjzy 112
+      - _US_电报频道 @pjrjzy 113
+      - _US_电报频道 @pjrjzy 114
+      - _US_电报频道 @pjrjzy 115
+      - _SG_电报频道 @pjrjzy 3
+      - _CN_电报频道 @pjrjzy 10
+      - _CN_电报频道 @pjrjzy 11
+      - _US_电报频道 @pjrjzy 116
+      - _KR_电报频道 @pjrjzy 3
+      - _BZ_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 12
+      - _CN_电报频道 @pjrjzy 13
+      - _US_电报频道 @pjrjzy 117
+      - _RO_电报频道 @pjrjzy 5
+      - _US_电报频道 @pjrjzy 118
+      - _JP_电报频道 @pjrjzy
+      - _KR_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 119
+      - _US_电报频道 @pjrjzy 120
+      - _US_电报频道 @pjrjzy 121
+      - _HK_电报频道 @pjrjzy 4
+      - _US_电报频道 @pjrjzy 122
+      - _US_电报频道 @pjrjzy 123
+      - _NL_电报频道 @pjrjzy 2
+      - _CY_电报频道 @pjrjzy 9
+      - _CN_电报频道 @pjrjzy 14
+      - _US_电报频道 @pjrjzy 124
+      - _US_电报频道 @pjrjzy 125
+      - _US_电报频道 @pjrjzy 126
+      - _AM_电报频道 @pjrjzy 6
+      - _US_电报频道 @pjrjzy 127
+      - _CN_电报频道 @pjrjzy 15
+      - _SG_电报频道 @pjrjzy 4
+      - _SG_电报频道 @pjrjzy 5
+      - _CN_电报频道 @pjrjzy 16
+      - _CN_电报频道 @pjrjzy 17
+      - _CN_电报频道 @pjrjzy 18
+      - _CN_电报频道 @pjrjzy 19
+      - _CN_电报频道 @pjrjzy 20
+      - _GB_电报频道 @pjrjzy
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
