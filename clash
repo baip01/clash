@@ -5,851 +5,615 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _US_jichangvpn.cloud, server: 104.18.3.2, port: 80, type: vmess, uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: idnusanet.vpnexecutive.my.id}}, udp: true}
-  - {name: _KR_jichangvpn.cloud, server: f-as2.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _GB_jichangvpn.cloud, server: 194.146.49.64, port: 443, type: vmess, uuid: 9c91143c-7cea-4135-89d8-da851515de55, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 2, server: medieval-distribute-failed-arrivals.trycloudflare.com, port: 443, type: vmess, uuid: 545c636f-4c88-41b4-bfc0-149b5a6848f4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/vmess?ed=2048", headers: {Host: medieval-distribute-failed-arrivals.trycloudflare.com}}, udp: true}
-  - {name: _CN_jichangvpn.cloud, server: hk22700.ssm6.com, port: 22500, type: vmess, uuid: 1F887331-2239-B21F-6815-3A322CCF4CD4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 3, server: els200.jslist.tk, port: 8443, type: vmess, uuid: e30cfa80-bc2c-43df-e808-97876aee77e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /wo.php, headers: {Host: els200.jslist.tk}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 2, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE_jichangvpn.cloud, server: f-eu1.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE_jichangvpn.cloud 2, server: f-eu1.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 4, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg1.sharecentrepro.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 5, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk2.ilovescp.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 6, server: 162.159.255.205, port: 80, type: vmess, uuid: 52466dc2-3550-4310-910c-74b7bf8a020e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.eu.org}}, udp: true}
-  - {name: _US_jichangvpn.cloud 7, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 8, server: 162.159.135.42, port: 80, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 9, server: cf.noaries.de, port: 8880, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-au.cloudflare.quest}}, udp: true}
-  - {name: _US_jichangvpn.cloud 10, server: awsus1-data.amazon-azure.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 11, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _HK_jichangvpn.cloud, server: hk3.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: e5ffd02e-a82b-40d1-83aa-23f9f6841abb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk3.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 2, server: hkt2.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}, udp: true}
-  - {name: _GB_jichangvpn.cloud 2, server: lond.inbarayeman.xyz, port: 443, type: vmess, uuid: fd3677a5-b5ba-4991-b346-b5887b879d84, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /tukovws, headers: {Host: lond.inbarayeman.xyz}}, udp: true}
-  - {name: _US_jichangvpn.cloud 12, server: ping.pe, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 13, server: 142.4.108.25, port: 55102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 14, server: 142.4.108.25, port: 55102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 15, server: germany1.unlimiteddev.co, port: 80, type: vmess, uuid: 97ea79a6-615c-4ad7-8083-4f3b49cbe8a2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: germany1.unlimiteddev.co}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 3, server: us20101.ssm6.com, port: 20101, type: vmess, uuid: 1F887331-2239-B21F-6815-3A322CCF4CD4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 3, server: hk2.c2bfe79372be.sanfen001.pics, port: 443, type: vmess, uuid: 6ff66f42-38d7-41c6-9a08-0d48f2ef3aa5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk2.c2bfe79372be.sanfen001.pics}}, udp: true}
-  - {name: _US_jichangvpn.cloud 16, server: www.jfyu.xyz, port: 443, type: vmess, uuid: 9688aa93-6129-40b9-93cc-04f1e8ab7c2d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /jfllpqyysys, headers: {Host: www.jfyu.xyz}}, udp: true}
-  - {name: _GB_jichangvpn.cloud 3, server: 83.142.225.32, port: 443, type: vmess, uuid: 5267ca71-97e6-44c8-8fb5-9fe4afe0954e, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/220128071100}, udp: true}
-  - {name: _CN_jichangvpn.cloud 4, server: 120.210.205.220, port: 36918, type: vmess, uuid: 411dacd6-030b-41ad-bfb6-3a822ec83014, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 17, server: dp3.scproxy.top, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 18, server: awsus2-data.amazon-azure.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 19, server: microsoftdebug.com, port: 80, type: vmess, uuid: 0673903d-6ff4-437c-87ee-ebdbda5e52a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /secx, headers: {Host: v1.us9.microsoftdebug.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 20, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg2.sharecentrepro.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 21, server: cf.noaries.de, port: 8880, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-us.cloudflare.quest}}, udp: true}
-  - {name: _SG_jichangvpn.cloud, server: sg.musekidan.com, port: 443, type: vmess, uuid: fffc5e69-86db-4f4f-81eb-b88fdce733a7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sg, headers: {Host: sg.musekidan.com}}, udp: true}
-  - {name: _JP_jichangvpn.cloud, server: dcbbe37e-rtixs0-xn6w.jp.p5pv.com, port: 80, type: vmess, uuid: 95f90aaa-2bb2-11eb-ad8c-f23c9164ca5d, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: broadcastlv.chat.bilibili.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 22, server: cf.noaries.de, port: 2082, type: vmess, uuid: 314c1387-618c-4689-97fc-4bc9a1ae5e05, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ir2.nmsl.ninja}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 4, server: hkt3.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 23, server: cf.noaries.de, port: 8080, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: _US_jichangvpn.cloud 24, server: husain12121.alihusainsorath.repl.co, port: 443, type: vmess, uuid: 13f64498-354e-447b-b963-d105d9865cd1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /13f64498-354e-447b-b963-d105d9865cd1-vm, headers: {Host: husain12121.alihusainsorath.repl.co}}, udp: true}
-  - {name: _DE_jichangvpn.cloud 3, server: 123xcty.eu-ddskrfhnxrqp.ondoprax.com, port: 443, type: vmess, uuid: cab644f7-3bff-4897-8c49-e8e306b8908f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cab644f7-3bff-4897-8c49-e8e306b8908f-vm, headers: {Host: 123xcty.eu-ddskrfhnxrqp.ondoprax.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 25, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
-  - {name: _US_jichangvpn.cloud 26, server: nl1.baf1.sbs, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: nl1.baf1.sbs}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 5, server: hkt5.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 5, server: 36.133.171.209, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _DE_jichangvpn.cloud 4, server: senjedpda.tk, port: 443, type: vmess, uuid: cab644f7-3bff-4897-8c49-e8e306b8908f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cab644f7-3bff-4897-8c49-e8e306b8908f-vm, headers: {Host: senjedpda.tk}}, udp: true}
-  - {name: _US_jichangvpn.cloud 27, server: 172.67.86.214, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: _US_jichangvpn.cloud 28, server: 172.64.173.160, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 29, server: cf.noaries.de, port: 2086, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: _SG_jichangvpn.cloud 2, server: bgpus4.amazon-azure.com, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: bgpus4.amazon-azure.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 30, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 6, server: hkt7.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 31, server: cf.515188.xyz, port: 8080, type: vmess, uuid: 9d553e2b-4176-44ef-bf70-48aa8eb6da60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 32, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 33, server: cf.noaries.de, port: 2052, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-us.cloudflare.quest}}, udp: true}
-  - {name: _US_jichangvpn.cloud 34, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 7, server: hk5.af49c4e4c2ef.sanfen001.pics, port: 443, type: vmess, uuid: e5ffd02e-a82b-40d1-83aa-23f9f6841abb, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: hk5.af49c4e4c2ef.sanfen001.pics}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 2, server: bgpjp7.data.amazon-azure.com, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: bgpjp7.data.amazon-azure.com}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 6, server: 36.134.16.190, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 7, server: 36.134.16.96, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 8, server: hkt8.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _SG_jichangvpn.cloud 3, server: bgpus6.amazon-azure.com, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: bgpus6.amazon-azure.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 35, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
-  - {name: _US_jichangvpn.cloud 36, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: de1.sharecentrepro.org}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 8, server: ingress-i2.iivvppnn.info, port: 38102, type: vmess, uuid: 79386685-16da-327c-9e14-aa6d702d86bc, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: _US_jichangvpn.cloud 37, server: cf.noaries.de, port: 8880, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: contabo-de.cloudflare.quest}}, udp: true}
-  - {name: _US_jichangvpn.cloud 38, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 3, server: cloud.cluster.download.cloudsys.buzz, port: 80, type: vmess, uuid: 522e8c21-156c-4125-b821-755956840e64, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ac9c9cf8-d1c3-4eb7-aa66-5052edaf9a94.ts, headers: {Host: cloud.cluster.download.cloudsys.buzz}}, udp: true}
-  - {name: _US_jichangvpn.cloud 39, server: hk-hytron.ilovescp.com, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 40, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 9, server: n1680937012.lyqrdde.cn, port: 443, type: vmess, uuid: a8a6acb9-cee4-4db6-ab9b-923097548e18, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: n1680937012.lyqrdde.cn}}, udp: true}
-  - {name: _US_jichangvpn.cloud 41, server: lin.musekidan.com, port: 443, type: vmess, uuid: fffc5e69-86db-4f4f-81eb-b88fdce733a7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /lin, headers: {Host: lin.untilmu.com}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 4, server: bgpjp3.data.amazon-azure.com, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: bgpjp3.data.amazon-azure.com}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 5, server: tk-002-002.xiaoxiaobujidao.xyz, port: 20960, type: vmess, uuid: 79f45dcc-0f0b-3765-bfda-6c7246ba44e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: tk-002.xiaoxiaobujidao.xyz}}, udp: true}
-  - {name: _US_jichangvpn.cloud 42, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg1.sharecentrepro.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 43, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp2.scproxy.top}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 6, server: bgpjp2.data.amazon-azure.com, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: bgpjp2.data.amazon-azure.com}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 7, server: tk-002.xiaoxiaobujidao.xyz, port: 20960, type: vmess, uuid: 79f45dcc-0f0b-3765-bfda-6c7246ba44e8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/xiaodao?ed=2048", headers: {Host: tk-002.xiaoxiaobujidao.xyz}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 9, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 44, server: 172.67.217.222, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 45, server: b.sandbad.live, port: 2053, type: vmess, uuid: a7ef78fc-145e-48de-9dc3-032644ca8d2a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: b.sandbad.live}}, udp: true}
-  - {name: _US_jichangvpn.cloud 46, server: cf.noaries.de, port: 2082, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: ovh.cloudflare.quest}}, udp: true}
-  - {name: _US_jichangvpn.cloud 47, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 48, server: 172.67.127.123, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 49, server: 140.99.149.43, port: 56882, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 50, server: cf.515188.xyz, port: 8080, type: vmess, uuid: 9d553e2b-4176-44ef-bf70-48aa8eb6da60, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 8, server: bgpjp1.data.amazon-azure.com, port: 443, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: bgpjp1.data.amazon-azure.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 51, server: fr2.cachexy.ga, port: 80, type: vmess, uuid: c8c9867b-df9a-4217-8161-67824e20cb57, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /g5D0hFMY/, headers: {Host: fr2.cachexy.ga}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 10, server: 120.240.163.56, port: 49944, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 52, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}, udp: true}
-  - {name: _VN_jichangvpn.cloud, server: f-as1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 10, server: hkt6-1.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 53, server: 192.74.242.150, port: 44667, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 54, server: microsoftdebug.com, port: 80, type: vmess, uuid: 1017ef6a-67d9-4bb3-b667-0d67c1ee5546, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /secx, headers: {Host: v1.us9.microsoftdebug.com}}, udp: true}
-  - {name: _IR_jichangvpn.cloud, server: f-us1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _IR_jichangvpn.cloud 2, server: f-us1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 55, server: 142.4.108.25, port: 55102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 56, server: hk-hytron.ilovescp.com, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
-  - {name: _US_jichangvpn.cloud 57, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}, udp: true}
-  - {name: _US_jichangvpn.cloud 58, server: dp3.scproxy.top, port: 443, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _US_jichangvpn.cloud 59, server: cf.noaries.de, port: 2052, type: vmess, uuid: a0f153d8-e32f-41f3-9bcd-073f579e2264, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: fr.cloudflare.quest}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 11, server: hkt4.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _IR_jichangvpn.cloud 3, server: f-us1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _KR_jichangvpn.cloud 2, server: f-as2.wvvvv.eu.org, port: 1, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 11, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: data-hk-v1.shwjfkw.cn}}, udp: true}
-  - {name: _US_jichangvpn.cloud 60, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2e496758-950e-4549-8842-d5eec98d9fde, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 12, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: YTB-awkj}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 13, server: tw20886.ssm6.com, port: 20886, type: vmess, uuid: 1F887331-2239-B21F-6815-3A322CCF4CD4, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 61, server: 192.74.229.218, port: 51592, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _IR_jichangvpn.cloud 4, server: f-us1.wvvvv.eu.org, port: 20, type: vmess, uuid: 0da1d372-ec60-4b89-8a3f-79159438c6f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 62, server: 107.148.5.80, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _FR_jichangvpn.cloud, server: pl2-vmess.greenssh.xyz, port: 443, type: vmess, uuid: 2e68015f-a8b2-4893-a7a3-4edb19b178d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: pl2-vmess.greenssh.xyz}}, udp: true}
-  - {name: _HK_jichangvpn.cloud 12, server: hkt1-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 03c13693-e3d1-429f-918e-9207e2ffe098, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}, udp: true}
-  - {name: _CN_jichangvpn.cloud 14, server: v6.heduian.online, port: 30866, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}, udp: true}
-  - {name: _SG_jichangvpn.cloud 4, server: 139.99.88.161, port: 10000, type: vmess, uuid: 7a877fa0-d965-11ed-ad71-7331bd5f599c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit}, udp: true}
-  - {name: _CN_jichangvpn.cloud 15, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}, udp: true}
-  - {name: _JP_jichangvpn.cloud 9, server: 85.208.108.21, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _JP_jichangvpn.cloud 10, server: 85.208.108.21, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: _CN_jichangvpn.cloud 16, server: gd-cn-01.1024.com.s1024.cc, port: 17937, type: ss, cipher: chacha20-ietf-poly1305, password: 4548b593-1fcf-4b47-9644-f93015c9ac4c, udp: true}
-  - {name: _JP_jichangvpn.cloud 11, server: 85.208.108.21, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: _JP_jichangvpn.cloud 12, server: 85.208.108.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: _JP_jichangvpn.cloud 13, server: 85.208.108.21, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _JP_jichangvpn.cloud 14, server: 85.208.108.21, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: _CN_jichangvpn.cloud 17, server: gd-cn-02.1024.com.s1024.cc, port: 27204, type: ss, cipher: chacha20-ietf-poly1305, password: 4548b593-1fcf-4b47-9644-f93015c9ac4c, udp: true}
-  - {name: _CN_jichangvpn.cloud 18, server: 36.139.166.252, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
-  - {name: _CN_jichangvpn.cloud 19, server: 36.137.106.45, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
-  - {name: _CN_jichangvpn.cloud 20, server: 36.139.166.244, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@, udp: true}
-  - {name: _JP_jichangvpn.cloud 15, server: 85.208.108.21, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _JP_jichangvpn.cloud 16, server: 85.208.108.21, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: _JP_jichangvpn.cloud 17, server: 85.208.108.21, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _GB_jichangvpn.cloud 4, server: 212.102.53.79, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
-  - {name: _JP_jichangvpn.cloud 18, server: 85.208.108.21, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: _JP_jichangvpn.cloud 19, server: 85.208.108.21, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_jichangvpn.cloud 63, server: 45.131.248.199, port: 45265, type: ss, cipher: aes-256-gcm, password: Trdm4IPLAn, udp: true}
-  - {name: _JP_jichangvpn.cloud 20, server: 85.208.108.21, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
-  - {name: _JP_jichangvpn.cloud 21, server: 85.208.108.21, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: _JP_jichangvpn.cloud 22, server: 85.208.108.21, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: _CN_jichangvpn.cloud 21, server: awshk5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 5, server: awssg3-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 13, server: awshk17-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _IN_jichangvpn.cloud, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: _KR_jichangvpn.cloud 3, server: awskr3-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 14, server: awshk1-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 15, server: awshk11-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 16, server: awshk19-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 23, server: fschk.fscloud123456789.com, port: 443, type: trojan, password: 2e31a75e-ce52-4d2c-95e1-41c8acdbc80c, skip-cert-verify: true, udp: true}
-  - {name: _IN_jichangvpn.cloud 2, server: awsin2-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 24, server: awsjp5-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 25, server: awsjp16-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 26, server: awsjp4-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 27, server: awsjp17-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 28, server: awsjp2-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _GB_jichangvpn.cloud 5, server: lond.inbarayeman.xyz, port: 443, type: trojan, password: fd3677a5-b5ba-4991-b346-b5887b879d84, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 29, server: awsjp18-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 30, server: awsjp1-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _KR_jichangvpn.cloud 4, server: awskr2-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 6, server: awssg14-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 31, server: awsjp20-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 64, server: aws.blowm1k.club, port: 20532, type: trojan, password: SbCfIK4dKM, skip-cert-verify: true, udp: true}
-  - {name: _TW_jichangvpn.cloud, server: kcdtw2-tg-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 32, server: awsjp3-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _KR_jichangvpn.cloud 5, server: awskr5-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 33, server: awsjp12-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _IN_jichangvpn.cloud 3, server: awsin1-tg-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 34, server: awsjp11-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _IT_jichangvpn.cloud, server: 18.102.64.163, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _KR_jichangvpn.cloud 6, server: awskr4-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _US_jichangvpn.cloud 65, server: awsus5-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 22, server: awshk3-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 23, server: awshk12-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 17, server: awshk20-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 35, server: awsjp13-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _IT_jichangvpn.cloud 2, server: 18.102.62.12, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 18, server: 16.163.194.6, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 36, server: awsjp15-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 37, server: awsjp19-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 19, server: udhk2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: tls.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 24, server: awshk2-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 7, server: awssg15-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 38, server: 43.206.138.232, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 8, server: awssg16-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 9, server: awssg4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 39, server: awsjp14-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 20, server: 16.163.16.82, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _AE_jichangvpn.cloud, server: awsae1-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 10, server: awssg1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 21, server: awshk13-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 22, server: awshk16-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 11, server: awssg17-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 12, server: azsg2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 23, server: awshk14-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 25, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _KR_jichangvpn.cloud 7, server: awskr1-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 13, server: awssg12-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 26, server: awshk18-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 14, server: awssg19-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _IN_jichangvpn.cloud 4, server: awsin3-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 15, server: awssg18-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _CN_jichangvpn.cloud 27, server: awshk1-zj.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 16, server: awssg2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 17, server: awssg20-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 18, server: awssg13-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 19, server: awssg11-data.amazon-azure.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _HK_jichangvpn.cloud 24, server: awshk4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 40, server: fscjp.fscloud123456789.com, port: 443, type: trojan, password: 7dc3a0b7-0930-42da-a6be-2a8623cdcfb4, skip-cert-verify: true, udp: true}
-  - {name: _SG_jichangvpn.cloud 20, server: 13.215.209.200, port: 443, type: trojan, password: 03c13693-e3d1-429f-918e-9207e2ffe098, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
-  - {name: _JP_jichangvpn.cloud 41, server: tr.jp.tlz.asia, port: 1231, type: trojan, password: AAQpJnbNDs, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666, server: zslbs.vtcss.top, port: 80, type: vmess, uuid: c5c9844d-050e-44f1-cb6d-ec5166772631, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: zslbs.vtcss.top}}, udp: true}
+  - {name: _电报频道： @shendu666 2, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 3, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 4, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 5, server: 36.134.16.171, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 6, server: 36.134.16.190, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 7, server: baic.vtcss.top, port: 80, type: vmess, uuid: 56dbd414-0a3c-40dc-cbbc-48afc94272a1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hongk, headers: {Host: baic.vtcss.top}}, udp: true}
+  - {name: _电报频道： @shendu666 8, server: de63.thugiping.cloud, port: 443, type: vmess, uuid: c9a22360-3f66-48c8-89ab-13799b05a730, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 9, server: 172.67.247.250, port: 80, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer11, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: _电报频道： @shendu666 10, server: de63.thugiping.cloud, port: 443, type: vmess, uuid: c9a22360-3f66-48c8-89ab-13799b05a730, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 11, server: 45.92.160.186, port: 58402, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 12, server: 36.134.16.190, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 13, server: pl2-vmess.greenssh.xyz, port: 80, type: vmess, uuid: 7487c25a-e899-44d8-9d71-8b9ab4ff5d26, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: pl2-vmess.greenssh.xyz}}, udp: true}
+  - {name: _电报频道： @shendu666 14, server: jp02-vm0.entry.srthdw.art, port: 448, type: vmess, uuid: 1bc52308-0bd9-30d0-90fd-cef337875d10, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 15, server: 103.21.244.37, port: 80, type: vmess, uuid: 53ae65be-81ee-4766-8a09-da43c44c4d30, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer11, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: _电报频道： @shendu666 16, server: 192.203.230.86, port: 80, type: vmess, uuid: a442dacf-cbb3-488a-9744-61494ea38630, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us-1.acyun.cf}}, udp: true}
+  - {name: _电报频道： @shendu666 17, server: usa.serverr.store, port: 21607, type: vmess, uuid: 80b02ea0-7aa2-444e-b7b4-1246a47928b3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: usa.serverr.store}}, udp: true}
+  - {name: _电报频道： @shendu666 18, server: 104.20.127.237, port: 443, type: vmess, uuid: e883ff76-3bb4-4008-c068-6b5b1d960ea7, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer09, headers: {Host: uyaa.vtcss.top}}, udp: true}
+  - {name: _电报频道： @shendu666 19, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: _电报频道： @shendu666 20, server: bozbozghandi.foriran.nl, port: 80, type: vmess, uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /7ouWwj1jH2IbuOfQj2chg, headers: {Host: bozbozghandi.foriran.nl}}, udp: true}
+  - {name: _电报频道： @shendu666 21, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp2.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 22, server: 23.225.117.37, port: 48829, type: vmess, uuid: bb25859e-f6da-4101-989f-b4dd67a22682, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 23, server: 192.74.231.179, port: 49202, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 24, server: 45.92.160.186, port: 58402, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 25, server: 36.133.171.209, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 26, server: 192.74.237.49, port: 30003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 27, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp4.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 28, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
+  - {name: _电报频道： @shendu666 29, server: 104.18.1.61, port: 2096, type: vmess, uuid: 408e2686-9e0d-4014-841e-7ca5da55a215, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: ho3ino, headers: {Host: h.h3io.co}}, udp: true}
+  - {name: _电报频道： @shendu666 30, server: cdncf.scyu.app, port: 8080, type: vmess, uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @shendu666 31, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @shendu666 32, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp1.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 33, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: in.sharecentrepro.com}}, udp: true}
+  - {name: _电报频道： @shendu666 34, server: cdncf.scyu.app, port: 8080, type: vmess, uuid: d1fca18b-00ce-4024-8cc8-4b49a4dd5e52, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @shendu666 35, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 36, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm2.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 37, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 38, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 39, server: 202.81.231.150, port: 80, type: vmess, uuid: 1d1c1d94-6987-4658-a4dc-8821a30fe7e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: idnusanet.vpnexecutive.my.id}}, udp: true}
+  - {name: _电报频道： @shendu666 40, server: cdncf.scyu.app, port: 80, type: vmess, uuid: 074c70d1-7479-4781-cf6d-e76515d4b0b3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: vc.scyu.app}}, udp: true}
+  - {name: _电报频道： @shendu666 41, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
+  - {name: _电报频道： @shendu666 42, server: HK01.ANRUN-IX.TOP, port: 443, type: vmess, uuid: 2c2aeac9-ba73-42f9-92a8-489c6d78ead1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: HK01.ANRUN-IX.TOP}}, udp: true}
+  - {name: _电报频道： @shendu666 43, server: 199.212.90.14, port: 443, type: vmess, uuid: 6147F065-9AC0-4081-A5A3-A2EB4EBB8958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}, udp: true}
+  - {name: _电报频道： @shendu666 44, server: hendostan.foriran.nl, port: 443, type: vmess, uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7ouWwj1jH2IbuOfQj2chg, headers: {Host: hendostan.foriran.nl}}, udp: true}
+  - {name: _电报频道： @shendu666 45, server: CHT.MIFJUN.ORG, port: 8082, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 46, server: en.foriran.live, port: 443, type: vmess, uuid: 8357816b-68e4-4a2b-830c-e9bdd369ea22, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /7ouWwj1jH2IbuOfQj2chg, headers: {Host: en.foriran.live}}, udp: true}
+  - {name: _电报频道： @shendu666 47, server: 185.162.228.229, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.trump2023.net}}, udp: true}
+  - {name: _电报频道： @shendu666 48, server: CHT.MIFJUN.ORG, port: 8082, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 49, server: 51.89.74.241, port: 51102, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 50, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 51, server: 203.30.191.100, port: 8880, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: lg.trump2023.net}}, udp: true}
+  - {name: _电报频道： @shendu666 52, server: 142.4.112.18, port: 51091, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 53, server: CHT.MIFJUN.ORG, port: 8082, type: vmess, uuid: c76bf073-d8c6-4d2d-aa5f-3bbdd3b6d0b2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 54, server: sg.zlj.me, port: 15041, type: ss, cipher: chacha20-ietf-poly1305, password: 0d294097-a193-4d81-b000-9beb1014c8f6, udp: true}
+  - {name: _电报频道： @shendu666 55, server: pt.zlj.me, port: 25541, type: ss, cipher: chacha20-ietf-poly1305, password: 0d294097-a193-4d81-b000-9beb1014c8f6, udp: true}
+  - {name: _电报频道： @shendu666 56, server: stw5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 57, server: bgptw5.cnamazon.sbs, port: 443, type: trojan, password: b31eb45e-7f95-465f-8229-716058f6dc49, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 58, server: 188.119.65.50, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 59, server: bgptw5.cnamazon.sbs, port: 443, type: trojan, password: 4658738d-c3f1-4ebf-ad7a-ee603e3f9690, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 60, server: 46.29.165.54, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 61, server: 46.29.165.54, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 62, server: stw8-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 63, server: awsae1-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 64, server: 103.169.7.11, port: 80, type: trojan, password: c0d9da22-2569-4bed-a395-607d9e7ae687, sni: sciencedirect.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 65, server: fscjp.fscloud123456789.com, port: 443, type: trojan, password: b2bde68d-8afc-4431-9924-5012ddb08a16, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 66, server: 45.130.147.76, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 67, server: 188.119.65.50, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 68, server: awskr4-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 69, server: awskr4-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 70, server: 13.215.140.145, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 71, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 72, server: awshk20-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 73, server: bgptw1.cnamazon.sbs, port: 443, type: trojan, password: e015d739-1656-4e9a-b0cc-5d8f11b0db5b, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 74, server: awshk5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 75, server: awshk1-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 76, server: awshk6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 77, server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 78, server: awshk20-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 79, server: stw10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 80, server: awssg16-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 81, server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 82, server: stw9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 83, server: 45.130.147.76, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 84, server: awssg18-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 85, server: awshk7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 86, server: awshk19-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 87, server: awssg19-data.amazon-azure.com, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 88, server: 13.215.177.20, port: 443, type: trojan, password: 794d739c-89a0-444c-b2e7-acce12af3042, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 89, server: awshk19-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 90, server: awssg19-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 91, server: awshk1-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 92, server: kr4.microsoft-orgwly.vip, port: 443, type: trojan, password: f3ccb94b-fc75-475a-80e1-b67913115462, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 93, server: awsin2-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 94, server: fscuk.fscloud123456789.com, port: 443, type: trojan, password: eb80128b-aa4d-4741-a87f-62ab98f01157, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 95, server: 18.102.68.105, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 96, server: 13.214.27.15, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 97, server: awssg9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 98, server: 13.215.194.103, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 99, server: awssg16-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 100, server: awskr1-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 101, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 102, server: 43.198.105.210, port: 443, type: trojan, password: 40e5d306-5129-4906-89e6-5502b7519ab0, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 103, server: 43.198.100.32, port: 443, type: trojan, password: 40e5d306-5129-4906-89e6-5502b7519ab0, sni: download.xn--mes358acgm99l.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 104, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 105, server: awshk9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 106, server: awshk13-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 107, server: awshk2-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 108, server: bgptru1.cnamazon.sbs, port: 443, type: trojan, password: b31eb45e-7f95-465f-8229-716058f6dc49, sni: tlsdata.cnamazon.sbs, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 109, server: stw9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 110, server: awshk5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 111, server: awssg6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 112, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 113, server: awshk4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 114, server: awshk2-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 115, server: awssg11-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 116, server: awssg11-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 117, server: awshk13-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 118, server: awshk14-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 119, server: awshk17-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 120, server: awssg20-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 121, server: 13.214.27.15, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 122, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 123, server: awshk6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 124, server: iranfreedom.duckdns.org, port: 443, type: trojan, password: 8357816b-68e4-4a2b-830c-e9bdd369ea22, sni: iranfreedom.duckdns.org, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 125, server: 16.163.102.234, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 126, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 127, server: awssg19-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 128, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 129, server: awssg5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 130, server: 13.215.194.103, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 131, server: awshk14-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 132, server: awshk17-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 133, server: awsae1-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 134, server: awssg7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 135, server: awssg6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 136, server: awssg9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 137, server: awsin2-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 138, server: shabi.masscloud.cf, port: 443, type: trojan, password: GaON64N6, sni: shabi.masscloud.cf, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 139, server: awshk4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 140, server: awshk7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 141, server: 135.148.149.209, port: 80, type: trojan, password: 255c924c-1314-4084-9a9e-1d1a82a5cf49, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 142, server: awssg18-data.amazon-azure.com, port: 443, type: trojan, password: ca7febc2-bb45-4e6d-810e-ab0af6009c4e, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 143, server: 18.102.68.105, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 144, server: 13.215.140.145, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 145, server: us4.microsoft-orgwly.vip, port: 12059, type: trojan, password: f3ccb94b-fc75-475a-80e1-b67913115462, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 146, server: awskr1-data.amazon-azure.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazon-azure.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 147, server: awshk9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 4aeda200-44c9-4168-8f2a-a00a72176d35, sni: data.amazonwebservicess.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @shendu666 148, server: fschk.fscloud123456789.com, port: 443, type: trojan, password: c3492e02-fa97-4913-adbf-94c8b67288b9, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -868,213 +632,154 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -1085,638 +790,461 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -1732,213 +1260,154 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _US_jichangvpn.cloud
-      - _KR_jichangvpn.cloud
-      - _GB_jichangvpn.cloud
-      - _US_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud
-      - _US_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 2
-      - _DE_jichangvpn.cloud
-      - _DE_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 7
-      - _US_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 11
-      - _HK_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 2
-      - _GB_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 12
-      - _US_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 14
-      - _US_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 16
-      - _GB_jichangvpn.cloud 3
-      - _CN_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 17
-      - _US_jichangvpn.cloud 18
-      - _US_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 20
-      - _US_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud
-      - _JP_jichangvpn.cloud
-      - _US_jichangvpn.cloud 22
-      - _HK_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 23
-      - _US_jichangvpn.cloud 24
-      - _DE_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 25
-      - _US_jichangvpn.cloud 26
-      - _HK_jichangvpn.cloud 5
-      - _CN_jichangvpn.cloud 5
-      - _DE_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 27
-      - _US_jichangvpn.cloud 28
-      - _US_jichangvpn.cloud 29
-      - _SG_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 30
-      - _HK_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 32
-      - _US_jichangvpn.cloud 33
-      - _US_jichangvpn.cloud 34
-      - _HK_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 6
-      - _CN_jichangvpn.cloud 7
-      - _HK_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 35
-      - _US_jichangvpn.cloud 36
-      - _CN_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 37
-      - _US_jichangvpn.cloud 38
-      - _JP_jichangvpn.cloud 3
-      - _US_jichangvpn.cloud 39
-      - _US_jichangvpn.cloud 40
-      - _HK_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 41
-      - _JP_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 5
-      - _US_jichangvpn.cloud 42
-      - _US_jichangvpn.cloud 43
-      - _JP_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 7
-      - _CN_jichangvpn.cloud 9
-      - _US_jichangvpn.cloud 44
-      - _US_jichangvpn.cloud 45
-      - _US_jichangvpn.cloud 46
-      - _US_jichangvpn.cloud 47
-      - _US_jichangvpn.cloud 48
-      - _US_jichangvpn.cloud 49
-      - _US_jichangvpn.cloud 50
-      - _JP_jichangvpn.cloud 8
-      - _US_jichangvpn.cloud 51
-      - _CN_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 52
-      - _VN_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 10
-      - _US_jichangvpn.cloud 53
-      - _US_jichangvpn.cloud 54
-      - _IR_jichangvpn.cloud
-      - _IR_jichangvpn.cloud 2
-      - _US_jichangvpn.cloud 55
-      - _US_jichangvpn.cloud 56
-      - _US_jichangvpn.cloud 57
-      - _US_jichangvpn.cloud 58
-      - _US_jichangvpn.cloud 59
-      - _HK_jichangvpn.cloud 11
-      - _IR_jichangvpn.cloud 3
-      - _KR_jichangvpn.cloud 2
-      - _CN_jichangvpn.cloud 11
-      - _US_jichangvpn.cloud 60
-      - _CN_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 13
-      - _US_jichangvpn.cloud 61
-      - _IR_jichangvpn.cloud 4
-      - _US_jichangvpn.cloud 62
-      - _FR_jichangvpn.cloud
-      - _HK_jichangvpn.cloud 12
-      - _CN_jichangvpn.cloud 14
-      - _SG_jichangvpn.cloud 4
-      - _CN_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 10
-      - _CN_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 11
-      - _JP_jichangvpn.cloud 12
-      - _JP_jichangvpn.cloud 13
-      - _JP_jichangvpn.cloud 14
-      - _CN_jichangvpn.cloud 17
-      - _CN_jichangvpn.cloud 18
-      - _CN_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 15
-      - _JP_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 17
-      - _GB_jichangvpn.cloud 4
-      - _JP_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 19
-      - _US_jichangvpn.cloud 63
-      - _JP_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 21
-      - _JP_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 21
-      - _SG_jichangvpn.cloud 5
-      - _HK_jichangvpn.cloud 13
-      - _IN_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 3
-      - _HK_jichangvpn.cloud 14
-      - _HK_jichangvpn.cloud 15
-      - _HK_jichangvpn.cloud 16
-      - _JP_jichangvpn.cloud 23
-      - _IN_jichangvpn.cloud 2
-      - _JP_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 25
-      - _JP_jichangvpn.cloud 26
-      - _JP_jichangvpn.cloud 27
-      - _JP_jichangvpn.cloud 28
-      - _GB_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 29
-      - _JP_jichangvpn.cloud 30
-      - _KR_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 6
-      - _JP_jichangvpn.cloud 31
-      - _US_jichangvpn.cloud 64
-      - _TW_jichangvpn.cloud
-      - _JP_jichangvpn.cloud 32
-      - _KR_jichangvpn.cloud 5
-      - _JP_jichangvpn.cloud 33
-      - _IN_jichangvpn.cloud 3
-      - _JP_jichangvpn.cloud 34
-      - _IT_jichangvpn.cloud
-      - _KR_jichangvpn.cloud 6
-      - _US_jichangvpn.cloud 65
-      - _CN_jichangvpn.cloud 22
-      - _CN_jichangvpn.cloud 23
-      - _HK_jichangvpn.cloud 17
-      - _JP_jichangvpn.cloud 35
-      - _IT_jichangvpn.cloud 2
-      - _HK_jichangvpn.cloud 18
-      - _JP_jichangvpn.cloud 36
-      - _JP_jichangvpn.cloud 37
-      - _HK_jichangvpn.cloud 19
-      - _CN_jichangvpn.cloud 24
-      - _SG_jichangvpn.cloud 7
-      - _JP_jichangvpn.cloud 38
-      - _SG_jichangvpn.cloud 8
-      - _SG_jichangvpn.cloud 9
-      - _JP_jichangvpn.cloud 39
-      - _HK_jichangvpn.cloud 20
-      - _AE_jichangvpn.cloud
-      - _SG_jichangvpn.cloud 10
-      - _HK_jichangvpn.cloud 21
-      - _HK_jichangvpn.cloud 22
-      - _SG_jichangvpn.cloud 11
-      - _SG_jichangvpn.cloud 12
-      - _HK_jichangvpn.cloud 23
-      - _CN_jichangvpn.cloud 25
-      - _KR_jichangvpn.cloud 7
-      - _SG_jichangvpn.cloud 13
-      - _CN_jichangvpn.cloud 26
-      - _SG_jichangvpn.cloud 14
-      - _IN_jichangvpn.cloud 4
-      - _SG_jichangvpn.cloud 15
-      - _CN_jichangvpn.cloud 27
-      - _SG_jichangvpn.cloud 16
-      - _SG_jichangvpn.cloud 17
-      - _SG_jichangvpn.cloud 18
-      - _SG_jichangvpn.cloud 19
-      - _HK_jichangvpn.cloud 24
-      - _JP_jichangvpn.cloud 40
-      - _SG_jichangvpn.cloud 20
-      - _JP_jichangvpn.cloud 41
+      - _电报频道： @shendu666
+      - _电报频道： @shendu666 2
+      - _电报频道： @shendu666 3
+      - _电报频道： @shendu666 4
+      - _电报频道： @shendu666 5
+      - _电报频道： @shendu666 6
+      - _电报频道： @shendu666 7
+      - _电报频道： @shendu666 8
+      - _电报频道： @shendu666 9
+      - _电报频道： @shendu666 10
+      - _电报频道： @shendu666 11
+      - _电报频道： @shendu666 12
+      - _电报频道： @shendu666 13
+      - _电报频道： @shendu666 14
+      - _电报频道： @shendu666 15
+      - _电报频道： @shendu666 16
+      - _电报频道： @shendu666 17
+      - _电报频道： @shendu666 18
+      - _电报频道： @shendu666 19
+      - _电报频道： @shendu666 20
+      - _电报频道： @shendu666 21
+      - _电报频道： @shendu666 22
+      - _电报频道： @shendu666 23
+      - _电报频道： @shendu666 24
+      - _电报频道： @shendu666 25
+      - _电报频道： @shendu666 26
+      - _电报频道： @shendu666 27
+      - _电报频道： @shendu666 28
+      - _电报频道： @shendu666 29
+      - _电报频道： @shendu666 30
+      - _电报频道： @shendu666 31
+      - _电报频道： @shendu666 32
+      - _电报频道： @shendu666 33
+      - _电报频道： @shendu666 34
+      - _电报频道： @shendu666 35
+      - _电报频道： @shendu666 36
+      - _电报频道： @shendu666 37
+      - _电报频道： @shendu666 38
+      - _电报频道： @shendu666 39
+      - _电报频道： @shendu666 40
+      - _电报频道： @shendu666 41
+      - _电报频道： @shendu666 42
+      - _电报频道： @shendu666 43
+      - _电报频道： @shendu666 44
+      - _电报频道： @shendu666 45
+      - _电报频道： @shendu666 46
+      - _电报频道： @shendu666 47
+      - _电报频道： @shendu666 48
+      - _电报频道： @shendu666 49
+      - _电报频道： @shendu666 50
+      - _电报频道： @shendu666 51
+      - _电报频道： @shendu666 52
+      - _电报频道： @shendu666 53
+      - _电报频道： @shendu666 54
+      - _电报频道： @shendu666 55
+      - _电报频道： @shendu666 56
+      - _电报频道： @shendu666 57
+      - _电报频道： @shendu666 58
+      - _电报频道： @shendu666 59
+      - _电报频道： @shendu666 60
+      - _电报频道： @shendu666 61
+      - _电报频道： @shendu666 62
+      - _电报频道： @shendu666 63
+      - _电报频道： @shendu666 64
+      - _电报频道： @shendu666 65
+      - _电报频道： @shendu666 66
+      - _电报频道： @shendu666 67
+      - _电报频道： @shendu666 68
+      - _电报频道： @shendu666 69
+      - _电报频道： @shendu666 70
+      - _电报频道： @shendu666 71
+      - _电报频道： @shendu666 72
+      - _电报频道： @shendu666 73
+      - _电报频道： @shendu666 74
+      - _电报频道： @shendu666 75
+      - _电报频道： @shendu666 76
+      - _电报频道： @shendu666 77
+      - _电报频道： @shendu666 78
+      - _电报频道： @shendu666 79
+      - _电报频道： @shendu666 80
+      - _电报频道： @shendu666 81
+      - _电报频道： @shendu666 82
+      - _电报频道： @shendu666 83
+      - _电报频道： @shendu666 84
+      - _电报频道： @shendu666 85
+      - _电报频道： @shendu666 86
+      - _电报频道： @shendu666 87
+      - _电报频道： @shendu666 88
+      - _电报频道： @shendu666 89
+      - _电报频道： @shendu666 90
+      - _电报频道： @shendu666 91
+      - _电报频道： @shendu666 92
+      - _电报频道： @shendu666 93
+      - _电报频道： @shendu666 94
+      - _电报频道： @shendu666 95
+      - _电报频道： @shendu666 96
+      - _电报频道： @shendu666 97
+      - _电报频道： @shendu666 98
+      - _电报频道： @shendu666 99
+      - _电报频道： @shendu666 100
+      - _电报频道： @shendu666 101
+      - _电报频道： @shendu666 102
+      - _电报频道： @shendu666 103
+      - _电报频道： @shendu666 104
+      - _电报频道： @shendu666 105
+      - _电报频道： @shendu666 106
+      - _电报频道： @shendu666 107
+      - _电报频道： @shendu666 108
+      - _电报频道： @shendu666 109
+      - _电报频道： @shendu666 110
+      - _电报频道： @shendu666 111
+      - _电报频道： @shendu666 112
+      - _电报频道： @shendu666 113
+      - _电报频道： @shendu666 114
+      - _电报频道： @shendu666 115
+      - _电报频道： @shendu666 116
+      - _电报频道： @shendu666 117
+      - _电报频道： @shendu666 118
+      - _电报频道： @shendu666 119
+      - _电报频道： @shendu666 120
+      - _电报频道： @shendu666 121
+      - _电报频道： @shendu666 122
+      - _电报频道： @shendu666 123
+      - _电报频道： @shendu666 124
+      - _电报频道： @shendu666 125
+      - _电报频道： @shendu666 126
+      - _电报频道： @shendu666 127
+      - _电报频道： @shendu666 128
+      - _电报频道： @shendu666 129
+      - _电报频道： @shendu666 130
+      - _电报频道： @shendu666 131
+      - _电报频道： @shendu666 132
+      - _电报频道： @shendu666 133
+      - _电报频道： @shendu666 134
+      - _电报频道： @shendu666 135
+      - _电报频道： @shendu666 136
+      - _电报频道： @shendu666 137
+      - _电报频道： @shendu666 138
+      - _电报频道： @shendu666 139
+      - _电报频道： @shendu666 140
+      - _电报频道： @shendu666 141
+      - _电报频道： @shendu666 142
+      - _电报频道： @shendu666 143
+      - _电报频道： @shendu666 144
+      - _电报频道： @shendu666 145
+      - _电报频道： @shendu666 146
+      - _电报频道： @shendu666 147
+      - _电报频道： @shendu666 148
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
