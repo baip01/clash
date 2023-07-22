@@ -5,431 +5,383 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 马来西亚(youtube阿伟科技), server: hk.nodegroups.ink, port: 33204, type: vmess, uuid: eb59d63a-4ad6-349f-a708-3bab087b3c3d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AWS新加坡3, server: sg2.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2), server: 198.2.218.203, port: 51203, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 2, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 41bec492-cd79-4b57-9a15-7d2bb00fcfca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/usfh2?ed=2048", headers: {Host: usfh2.pqjc.buzz}}, udp: true}
-  - {name: _电报频道： @shendu666, server: 112.132.215.189, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 3, server: speed.76898102.xyz, port: 443, type: vmess, uuid: dddd0b29-1576-4003-9990-d7cea34264db, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /835757, headers: {Host: dedi2.1808.cf}}, udp: true}
-  - {name: 美国4, server: 163.123.192.157, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇮🇷_IR_伊朗, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 57c6b55e-d0dc-47de-ab85-0c17b79a3a86, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /d3QyW1VhYbXYnWiYkDe, headers: {Host: de10.irteh.fun}}, udp: true}
-  - {name: _US_美国, server: 198.2.203.148, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 2, server: 104.18.23.26, port: 8080, type: vmess, uuid: dcafb669-fefc-4994-e3a9-5f40ed6aa7cf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /sshtproject, headers: {Host: v2free.sshtproect.shop}}, udp: true}
-  - {name: GB英国(youtube阿伟科技), server: 54.38.154.182, port: 54902, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 3, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
-  - {name: GB英国(youtube阿伟科技) 2, server: 178.79.153.225, port: 40840, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 1948469439, udp: true}
-  - {name: _US_美国 2, server: 104.18.1.110, port: 443, type: vmess, uuid: 1d8488a7-c784-4e66-ae92-1b22da9c9e68, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/c3lZ7dp02p?ed=2048", headers: {Host: d2.pgypgykmoljklj.xyz}}, udp: true}
-  - {name: 美国2, server: 148.59.74.247, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _NL_荷兰, server: 154.85.1.242, port: 45516, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: GB英国(youtube阿伟科技) 3, server: 139.162.199.40, port: 40840, type: ss, cipher: chacha20-ietf-poly1305, password: !<str> 1948469439, udp: true}
-  - {name: US美国(youtube阿伟科技2) 4, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: HK香港(youtube阿伟科技), server: hkgkgb.76898102.xyz, port: 2082, type: vmess, uuid: 285bfc27-2341-3c7a-be0e-360cedd5e209, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /funsdfrh, headers: {Host: hkg.76898102.xyz}}, udp: true}
-  - {name: _US_美国 3, server: 38.26.191.98, port: 49920, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: AWS香港3, server: hk2.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: AWS日本3, server: jp2.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "IEPL-AP-HK-1[ran-out]", server: assets.flareai.site, port: 13543, type: trojan, password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66, skip-cert-verify: true, udp: true}
-  - {name: AWS新加坡1, server: sg1.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: SG新加坡(youtube阿伟科技), server: cdn.noice.id, port: 80, type: vmess, uuid: 641a1a24-7d4c-447d-9005-cc43bfc4da8d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tunnelvmess, headers: {Host: sgaws1.tunnel.systems}}, udp: true}
-  - {name: _电报频道： @shendu666 4, server: free.themars.top, port: 32102, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
-  - {name: GB英国(youtube阿伟科技) 4, server: 104.18.26.68, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: github.com/freefq - 以色列  19, server: au1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: "@vpnhat", server: 148.59.74.246, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  2, server: jp3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 5, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp2.yxjnode.com}}, udp: true}
-  - {name: _电报频道： @shendu666 6, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp3.yxjnode.com}}, udp: true}
-  - {name: _US_美国->🇨🇦_CA_加拿大, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}, udp: true}
-  - {name: _US_美国 4, server: 104.24.181.229, port: 8080, type: vmess, uuid: 9588cb0f-5102-4e66-d5fb-f96cba9acdda, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: _BR_巴西->🇬🇧_GB_英国, server: freenodecdn.ikuan.dev, port: 2052, type: vmess, uuid: 3185c2f3-4246-49c4-ba8a-5ea8fb2ef6b8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /FreeForGFW, headers: {Host: freeforgfw.ikuan.dev}}, udp: true}
-  - {name: AWS日本1, server: jp1.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 10, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: c07a7268-6b25-4952-be6d-e9fb3beacedc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: AWS香港1, server: hk1.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: "CTVIP-HK-3[ran-out]", server: h961359.waihuizhibiaowang.com, port: 13543, type: trojan, password: d0d24d5b-54ae-40a0-ab68-889dbd4b8a66, skip-cert-verify: true, udp: true}
-  - {name: 台湾Hinet, server: gs-hinet.gsjc.cfd, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11, server: 23.227.38.99, port: 443, type: vmess, uuid: 86d37526-5758-4cec-862f-df404b313086, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /3G6WPDL7, headers: {Host: 1.freek1.xyz}}, udp: true}
-  - {name: github.com/freefq - 美国  7, server: bb.hk1997.pro, port: 1001, type: vmess, uuid: fdf6caf1-88e0-4eca-b7b6-a60b70aa1e93, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jash-weh-peft-pseb-lous-jass, headers: {Host: bb.hk1997.pro}}, udp: true}
-  - {name: US美国(youtube阿伟科技2) 5, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 41bec492-cd79-4b57-9a15-7d2bb00fcfca, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/usfh3?ed=2048", headers: {Host: usfh3.pqjc.buzz}}, udp: true}
-  - {name: _IL_以色列->🇦🇺_AU_澳大利亚, server: au3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇺🇸_US_美国, server: us1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇺🇸_US_美国 2, server: us3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇺🇸_US_美国 3, server: us2.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 7, server: 36.133.171.209, port: 11023, type: vmess, uuid: 8c042a38-71c1-1dcb-00df-54880236e0dc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _IL_以色列->🇳🇱_NL_荷兰, server: nl1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  17, server: uk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 8, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
-  - {name: _IL_以色列->🇳🇱_NL_荷兰 2, server: nl3.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 6, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 5, server: cf-dx-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp1.scproxy.top}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 18, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 882f3f11-02bc-4ecf-96b6-2da1bebcd7e4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /wmIMRWSrsFRTES3pFURTK72T, headers: {Host: de9.irteh.fun}}, udp: true}
-  - {name: 美国3, server: 148.59.74.248, port: 443, type: trojan, password: e01d0803-5ee1-48c4-a962-2308daf9ad79, sni: 20-212-60-88.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 9, server: tech.noaries.de, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: _US_美国 6, server: 104.25.29.187, port: 8080, type: vmess, uuid: d7cf7b64-bf1c-46bd-cf39-90a31393843b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uyaa.vtcss.top}}, udp: true}
-  - {name: _US_美国 7, server: 192.74.234.82, port: 51302, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 8, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare公司CDN节点 13, server: 104.25.243.70, port: 80, type: vmess, uuid: 6884d728-7fb0-4172-c319-e8caeadcd01f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg@herhero6, headers: {Host: us.herofree66.tk}}, udp: true}
-  - {name: SG新加坡(youtube阿伟科技2), server: visa.cn, port: 80, type: vmess, uuid: 8a694cfb-d143-4378-cb85-faacdc69e5e1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ass.669990.xyz}}, udp: true}
-  - {name: _电报频道： @shendu666 10, server: 152.70.74.66, port: 443, type: trojan, password: d906afe5-7c3c-4ddc-aaa4-61c154a82e5e, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇸🇬_SG_新加坡, server: www.noice.id, port: 443, type: vmess, uuid: 37776019-07ea-4a1d-94e7-88e5e133ad5a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /worryfree, headers: {Host: v2ray1.udpgw.com}}, udp: true}
-  - {name: GB英国(youtube阿伟科技) 5, server: 104.21.215.91, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 11, server: cf-yd-dns.sharecentre.online, port: 80, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: US美国(youtube阿伟科技2) 7, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 2d5d8b9c-8ec4-4a37-b610-78e71e13eaef, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: gcore.ilovescp.com}}, udp: true}
-  - {name: _电报频道： @shendu666 11, server: 104.21.53.35, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: buyvm1.yxjnode.com}}, udp: true}
-  - {name: _TW_台湾->🇭🇰_HK_香港, server: tw1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 8, server: 156.245.8.225, port: 46955, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _HK_香港->🇳🇱_NL_荷兰, server: 156.245.8.225, port: 46955, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 9, server: baic.vtcss.top, port: 8880, type: vmess, uuid: 4a11efd5-b731-4002-aa01-647f3a2f4a4e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: baic.vtcss.top}}, udp: true}
-  - {name: github.com/freefq - 以色列  14, server: nl2.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: EE爱沙尼亚(youtube阿伟科技2), server: ee1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: FR法国(youtube阿伟科技), server: asintech-id-telegram.as-tech.top, port: 2200, type: vmess, uuid: 91804ca9-924b-4d5e-ca81-64d4cbee709a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL荷兰(youtube阿伟科技2), server: 156.245.8.225, port: 46955, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: NL荷兰(youtube阿伟科技2) 2, server: 154.85.1.242, port: 45516, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 10, server: 108.186.116.177, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 12, server: cf.yxjnode.com, port: 80, type: vmess, uuid: 09c1d32d-4458-4ebf-b36d-4dd732bae3aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /yxzbp, headers: {Host: dp4.yxjnode.com}}, udp: true}
-  - {name: github.com/freefq - 美国CloudFlare节点 26, server: 198.41.197.135, port: 80, type: vmess, uuid: 1eeeff8d-0028-46ec-ec2a-d39401047fbb, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: _US_美国 9, server: tou.vtcss.top, port: 8880, type: vmess, uuid: cb8cbbc3-137a-4064-8d02-b0ee3ca2c18c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qazxcv00, headers: {Host: tou.vtcss.top}}, udp: true}
-  - {name: _US_美国 10, server: 108.186.116.177, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @shendu666 13, server: free.themars.top, port: 32103, type: ss, cipher: chacha20-ietf-poly1305, password: b89b39c2-dc8d-4595-a4c5-54b4fbab3fc2, udp: true}
-  - {name: _US_美国 11, server: 74.217.179.187, port: 40042, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 11, server: 108.186.116.175, port: 55005, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 12, server: 192.74.234.82, port: 51302, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 以色列  5, server: jp2.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 13, server: 74.217.179.187, port: 40042, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 14, server: baic.vtcss.top, port: 2083, type: vmess, uuid: dbafa3af-065a-4326-9503-d8c1ed79faac, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: baic.vtcss.top, network: ws, ws-opts: {path: /qwer01, headers: {Host: baic.vtcss.top}}, udp: true}
-  - {name: US美国(youtube阿伟科技2) 15, server: iepl2.airtcp.vip, port: 51002, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: TW台湾(youtube阿伟科技), server: 61.220.198.100, port: 58002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: KR韩国(youtube阿伟科技), server: kr2.furiousspeed.net, port: 10000, type: vmess, uuid: 98cc5a23-f3ce-41e4-b0c2-50d11102b66c, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /ilhxvws, headers: {Host: kr2.furiousspeed.net}}, udp: true}
-  - {name: _KR_韩国, server: kr.cc2.zhoushuren.top, port: 58853, type: trojan, password: 431218b0-8b07-4d71-89a4-c20aa92fce30, sni: kr.cc2.zhoushuren.top, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 16, server: ieplhk.lanyunshi.top, port: 51004, type: vmess, uuid: 1a7680df-81a1-3d89-a221-db81ac4b04df, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 17, server: bb.hk1997.pro, port: 1001, type: vmess, uuid: 1ac885c5-f127-49c4-acfd-ea72f98a10ed, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /jash-weh-peft-pseb-lous-jass, headers: {Host: bb.hk1997.pro}}, udp: true}
-  - {name: _电报频道： @shendu666 14, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国->🇮🇩_ID_印度尼西亚, server: banterbener.my.id, port: 80, type: vmess, uuid: 5d956feb-4605-4523-a866-2a8b45f1216f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /xrayvws, headers: {Host: banterbener.my.id}}, udp: true}
-  - {name: github.com/freefq - 以色列  27, server: hk1.chuqiangtou.net, port: 4003, type: trojan, password: TJCfE7Mx2YcA8kX8zg, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq - 广东省佛山市移动 29, server: 8.v2-ray.cyou, port: 23608, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: IN印度(youtube阿伟科技), server: 183.237.20.147, port: 41242, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: US美国(youtube阿伟科技2) 18, server: 183.237.20.147, port: 41242, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _US_美国 12, server: 192.74.228.179, port: 42857, type: vmess, uuid: 051b844f-efe3-4847-92aa-66b5de0b6d4e, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd, server: 89.116.38.181, port: 3456, type: vmess, uuid: 32e49539-f569-403d-b4b6-a8978c040d5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
+  - {name: _电报频道： @mfjdpd 2, server: char.samrg.buzz, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cutino, headers: {Host: char.samrg.buzz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 3, server: 172.67.147.156, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cutino, headers: {Host: char.samrg.buzz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 4, server: 137.175.3.232, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689935243027, headers: {Host: www.33021824.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 5, server: 142.4.104.196, port: 56000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 6, server: 137.175.3.226, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+  - {name: _电报频道： @mfjdpd 7, server: 107.148.194.239, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 8, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: _电报频道： @mfjdpd 9, server: 38.26.135.5, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 10, server: us.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 11, server: 104.16.44.213, port: 8080, type: vmess, uuid: 20670d72-d0ab-469e-81f4-1564f03955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: _电报频道： @mfjdpd 12, server: 104.18.1.196, port: 80, type: vmess, uuid: 0dfa89a7-fe08-454e-817b-374097be358f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg2-mlb.securev2ray.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 13, server: jp.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 14, server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 15, server: 192.74.232.232, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689935243027, headers: {Host: www.54092415.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 16, server: 104.17.20.55, port: 443, type: vmess, uuid: 495FAF9E-9775-4DC5-91F0-C4341B789B4F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
+  - {name: _电报频道： @mfjdpd 17, server: 45.12.112.102, port: 48901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 18, server: edu1.v-pn.my.id, port: 443, type: vmess, uuid: 98476c2f-2971-4326-93c4-896a85124845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ikd2.vpn-akcelluler.my.id}}, udp: true}
+  - {name: _电报频道： @mfjdpd 19, server: 140.99.149.45, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 20, server: 142.0.139.213, port: 51522, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 21, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
+  - {name: _电报频道： @mfjdpd 22, server: cfcdn3.sanfencdn.net, port: 2052, type: vmess, uuid: aa2c8122-d188-489f-88b9-b4af51b9ab9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: sg3.sanfencdn2.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 23, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 24, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 25, server: 137.175.4.114, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689767805929, headers: {Host: www.40735439.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 26, server: 104.18.29.109, port: 443, type: vmess, uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /16575, headers: {Host: cdnca1.digisport.shop}}, udp: true}
+  - {name: _电报频道： @mfjdpd 27, server: www.codepen.io, port: 443, type: vmess, uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 28, server: ahsorathiyaa.fly.dev, port: 443, type: vmess, uuid: de04add9-5c68-8bab-950c-08cd5320df18, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ahsorathiyaa.fly.dev}}, udp: true}
+  - {name: _电报频道： @mfjdpd 29, server: jp.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 30, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 31, server: 203.23.104.190, port: 443, type: vmess, uuid: 495FAF9E-9775-4DC5-91F0-C4341B789B4F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
+  - {name: _电报频道： @mfjdpd 32, server: amszxc.66666654.xyz, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 33, server: hk.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 34, server: 45.199.138.162, port: 49355, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 35, server: us.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 36, server: us.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 37, server: 104.31.16.46, port: 2082, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme100.fun}}, udp: true}
+  - {name: _电报频道： @mfjdpd 38, server: sg.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 39, server: hk.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 40, server: 47.104.240.230, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 41, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 42, server: 140.99.149.45, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 43, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 44, server: 198.2.203.51, port: 44672, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 45, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/usfh3?ed=2048", headers: {Host: usfh3.pqjc.buzz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 46, server: 104.25.177.236, port: 8080, type: vmess, uuid: 20670d72-d0ab-469e-81f4-1564f03955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: _电报频道： @mfjdpd 47, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 48, server: 104.25.98.164, port: 8080, type: vmess, uuid: 20670d72-d0ab-469e-81f4-1564f03955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: _电报频道： @mfjdpd 49, server: 45.199.138.133, port: 55523, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 50, server: speedip.eu.org, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 51, server: edu1.v-pn.my.id, port: 443, type: vmess, uuid: 98476c2f-2971-4326-93c4-896a85124845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ikd2.vpn-akcelluler.my.id}}, udp: true}
+  - {name: _电报频道： @mfjdpd 52, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
+  - {name: _电报频道： @mfjdpd 53, server: 38.26.135.5, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 54, server: sg.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 55, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
+  - {name: _电报频道： @mfjdpd 56, server: 142.4.97.76, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 57, server: 142.4.97.71, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 58, server: speedip.eu.org, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 59, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 60, server: 142.4.126.70, port: 52212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 61, server: cf.dalazhi.eu.org, port: 443, type: vmess, uuid: 64480f4c-61c2-4d88-89c3-fc0045229bfc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kplxvws, headers: {Host: us.dalazhi.eu.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 62, server: 104.31.16.46, port: 2082, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme100.fun}}, udp: true}
+  - {name: _电报频道： @mfjdpd 63, server: 120.233.43.75, port: 50465, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 64, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 65, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
+  - {name: _电报频道： @mfjdpd 66, server: 45.12.112.122, port: 54774, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 67, server: www.codepen.io, port: 443, type: vmess, uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}, udp: true}
+  - {name: _电报频道： @mfjdpd 68, server: 108.166.203.183, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 69, server: cfcdn3.sanfencdn.net, port: 2052, type: vmess, uuid: aa2c8122-d188-489f-88b9-b4af51b9ab9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: sg3.sanfencdn2.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 70, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 71, server: 104.31.16.28, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca4.tehme2.fun}}, udp: true}
+  - {name: _电报频道： @mfjdpd 72, server: 142.4.97.76, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 73, server: 140.99.149.45, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 74, server: 108.166.203.183, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 75, server: 156.225.67.207, port: 48123, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 76, server: 162.159.50.55, port: 8880, type: vmess, uuid: d7ca2363-81c2-43a0-f141-352815da3ac3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
+  - {name: _电报频道： @mfjdpd 77, server: 142.4.97.72, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 78, server: speedip.eu.org, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
+  - {name: _电报频道： @mfjdpd 79, server: 45.199.138.166, port: 55016, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 80, server: 104.31.16.85, port: 443, type: vmess, uuid: a2284cc1-20d8-4c78-a622-3e3cca767a70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: a2284cc1, headers: {Host: dedi2.1808.cf}}, udp: true}
+  - {name: _电报频道： @mfjdpd 81, server: 142.4.97.74, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 82, server: 156.249.18.37, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 83, server: jp.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
+  - {name: _电报频道： @mfjdpd 84, server: 139.59.1.39, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: MWiIVYCyO8FfybKWhjt9Sz, udp: true}
+  - {name: _电报频道： @mfjdpd 85, server: 167.160.91.118, port: 10077, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: _电报频道： @mfjdpd 86, server: pqawszf.aiopen.cfd, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: us2.pqjc.site, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 87, server: 159.65.132.147, port: 443, type: trojan, password: a185ed4c-2b5c-4a6f-a674-4b67f9c3bfbc, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 88, server: 163.123.192.60, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 89, server: 163.123.192.60, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, skip-cert-verify: true, udp: true}
+  - {name: _电报频道： @mfjdpd 90, server: 159.65.132.147, port: 443, type: trojan, password: a185ed4c-2b5c-4a6f-a674-4b67f9c3bfbc, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -448,442 +400,387 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - HK香港(youtube阿伟科技)
-      - AWS香港3
-      - AWS香港1
-      - 台湾Hinet
-      - _TW_台湾->🇭🇰_HK_香港
-      - _HK_香港->🇳🇱_NL_荷兰
-      - TW台湾(youtube阿伟科技)
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -899,108 +796,96 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 马来西亚(youtube阿伟科技)
-      - AWS新加坡3
-      - US美国(youtube阿伟科技2)
-      - US美国(youtube阿伟科技2) 2
-      - _电报频道： @shendu666
-      - US美国(youtube阿伟科技2) 3
-      - 美国4
-      - _US_美国->🇮🇷_IR_伊朗
-      - _US_美国
-      - _电报频道： @shendu666 2
-      - GB英国(youtube阿伟科技)
-      - _电报频道： @shendu666 3
-      - GB英国(youtube阿伟科技) 2
-      - _US_美国 2
-      - 美国2
-      - _NL_荷兰
-      - GB英国(youtube阿伟科技) 3
-      - US美国(youtube阿伟科技2) 4
-      - HK香港(youtube阿伟科技)
-      - _US_美国 3
-      - AWS香港3
-      - AWS日本3
-      - IEPL-AP-HK-1[ran-out]
-      - AWS新加坡1
-      - SG新加坡(youtube阿伟科技)
-      - _电报频道： @shendu666 4
-      - GB英国(youtube阿伟科技) 4
-      - github.com/freefq - 以色列  19
-      - "@vpnhat"
-      - github.com/freefq - 以色列  2
-      - _电报频道： @shendu666 5
-      - _电报频道： @shendu666 6
-      - _US_美国->🇨🇦_CA_加拿大
-      - _US_美国 4
-      - _BR_巴西->🇬🇧_GB_英国
-      - AWS日本1
-      - github.com/freefq - 美国CloudFlare节点 10
-      - AWS香港1
-      - CTVIP-HK-3[ran-out]
-      - 台湾Hinet
-      - github.com/freefq - 美国CloudFlare公司CDN节点(shopify) 11
-      - github.com/freefq - 美国  7
-      - US美国(youtube阿伟科技2) 5
-      - _IL_以色列->🇦🇺_AU_澳大利亚
-      - _IL_以色列->🇺🇸_US_美国
-      - _IL_以色列->🇺🇸_US_美国 2
-      - _IL_以色列->🇺🇸_US_美国 3
-      - _电报频道： @shendu666 7
-      - _IL_以色列->🇳🇱_NL_荷兰
-      - github.com/freefq - 以色列  17
-      - _电报频道： @shendu666 8
-      - _IL_以色列->🇳🇱_NL_荷兰 2
-      - US美国(youtube阿伟科技2) 6
-      - _US_美国 5
-      - github.com/freefq - 美国CloudFlare公司CDN节点 18
-      - 美国3
-      - _电报频道： @shendu666 9
-      - _US_美国 6
-      - _US_美国 7
-      - _US_美国 8
-      - github.com/freefq - 美国CloudFlare公司CDN节点 13
-      - SG新加坡(youtube阿伟科技2)
-      - _电报频道： @shendu666 10
-      - _US_美国->🇸🇬_SG_新加坡
-      - GB英国(youtube阿伟科技) 5
-      - github.com/freefq - 美国CloudFlare节点 11
-      - US美国(youtube阿伟科技2) 7
-      - _电报频道： @shendu666 11
-      - _TW_台湾->🇭🇰_HK_香港
-      - US美国(youtube阿伟科技2) 8
-      - _HK_香港->🇳🇱_NL_荷兰
-      - US美国(youtube阿伟科技2) 9
-      - github.com/freefq - 以色列  14
-      - EE爱沙尼亚(youtube阿伟科技2)
-      - FR法国(youtube阿伟科技)
-      - NL荷兰(youtube阿伟科技2)
-      - NL荷兰(youtube阿伟科技2) 2
-      - US美国(youtube阿伟科技2) 10
-      - _电报频道： @shendu666 12
-      - github.com/freefq - 美国CloudFlare节点 26
-      - _US_美国 9
-      - _US_美国 10
-      - _电报频道： @shendu666 13
-      - _US_美国 11
-      - US美国(youtube阿伟科技2) 11
-      - US美国(youtube阿伟科技2) 12
-      - github.com/freefq - 以色列  5
-      - US美国(youtube阿伟科技2) 13
-      - US美国(youtube阿伟科技2) 14
-      - US美国(youtube阿伟科技2) 15
-      - TW台湾(youtube阿伟科技)
-      - KR韩国(youtube阿伟科技)
-      - _KR_韩国
-      - US美国(youtube阿伟科技2) 16
-      - US美国(youtube阿伟科技2) 17
-      - _电报频道： @shendu666 14
-      - _US_美国->🇮🇩_ID_印度尼西亚
-      - github.com/freefq - 以色列  27
-      - github.com/freefq - 广东省佛山市移动 29
-      - IN印度(youtube阿伟科技)
-      - US美国(youtube阿伟科技2) 18
-      - _US_美国 12
+      - _电报频道： @mfjdpd
+      - _电报频道： @mfjdpd 2
+      - _电报频道： @mfjdpd 3
+      - _电报频道： @mfjdpd 4
+      - _电报频道： @mfjdpd 5
+      - _电报频道： @mfjdpd 6
+      - _电报频道： @mfjdpd 7
+      - _电报频道： @mfjdpd 8
+      - _电报频道： @mfjdpd 9
+      - _电报频道： @mfjdpd 10
+      - _电报频道： @mfjdpd 11
+      - _电报频道： @mfjdpd 12
+      - _电报频道： @mfjdpd 13
+      - _电报频道： @mfjdpd 14
+      - _电报频道： @mfjdpd 15
+      - _电报频道： @mfjdpd 16
+      - _电报频道： @mfjdpd 17
+      - _电报频道： @mfjdpd 18
+      - _电报频道： @mfjdpd 19
+      - _电报频道： @mfjdpd 20
+      - _电报频道： @mfjdpd 21
+      - _电报频道： @mfjdpd 22
+      - _电报频道： @mfjdpd 23
+      - _电报频道： @mfjdpd 24
+      - _电报频道： @mfjdpd 25
+      - _电报频道： @mfjdpd 26
+      - _电报频道： @mfjdpd 27
+      - _电报频道： @mfjdpd 28
+      - _电报频道： @mfjdpd 29
+      - _电报频道： @mfjdpd 30
+      - _电报频道： @mfjdpd 31
+      - _电报频道： @mfjdpd 32
+      - _电报频道： @mfjdpd 33
+      - _电报频道： @mfjdpd 34
+      - _电报频道： @mfjdpd 35
+      - _电报频道： @mfjdpd 36
+      - _电报频道： @mfjdpd 37
+      - _电报频道： @mfjdpd 38
+      - _电报频道： @mfjdpd 39
+      - _电报频道： @mfjdpd 40
+      - _电报频道： @mfjdpd 41
+      - _电报频道： @mfjdpd 42
+      - _电报频道： @mfjdpd 43
+      - _电报频道： @mfjdpd 44
+      - _电报频道： @mfjdpd 45
+      - _电报频道： @mfjdpd 46
+      - _电报频道： @mfjdpd 47
+      - _电报频道： @mfjdpd 48
+      - _电报频道： @mfjdpd 49
+      - _电报频道： @mfjdpd 50
+      - _电报频道： @mfjdpd 51
+      - _电报频道： @mfjdpd 52
+      - _电报频道： @mfjdpd 53
+      - _电报频道： @mfjdpd 54
+      - _电报频道： @mfjdpd 55
+      - _电报频道： @mfjdpd 56
+      - _电报频道： @mfjdpd 57
+      - _电报频道： @mfjdpd 58
+      - _电报频道： @mfjdpd 59
+      - _电报频道： @mfjdpd 60
+      - _电报频道： @mfjdpd 61
+      - _电报频道： @mfjdpd 62
+      - _电报频道： @mfjdpd 63
+      - _电报频道： @mfjdpd 64
+      - _电报频道： @mfjdpd 65
+      - _电报频道： @mfjdpd 66
+      - _电报频道： @mfjdpd 67
+      - _电报频道： @mfjdpd 68
+      - _电报频道： @mfjdpd 69
+      - _电报频道： @mfjdpd 70
+      - _电报频道： @mfjdpd 71
+      - _电报频道： @mfjdpd 72
+      - _电报频道： @mfjdpd 73
+      - _电报频道： @mfjdpd 74
+      - _电报频道： @mfjdpd 75
+      - _电报频道： @mfjdpd 76
+      - _电报频道： @mfjdpd 77
+      - _电报频道： @mfjdpd 78
+      - _电报频道： @mfjdpd 79
+      - _电报频道： @mfjdpd 80
+      - _电报频道： @mfjdpd 81
+      - _电报频道： @mfjdpd 82
+      - _电报频道： @mfjdpd 83
+      - _电报频道： @mfjdpd 84
+      - _电报频道： @mfjdpd 85
+      - _电报频道： @mfjdpd 86
+      - _电报频道： @mfjdpd 87
+      - _电报频道： @mfjdpd 88
+      - _电报频道： @mfjdpd 89
+      - _电报频道： @mfjdpd 90
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
