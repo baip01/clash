@@ -5,383 +5,107 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: _电报频道： @mfjdpd, server: 89.116.38.181, port: 3456, type: vmess, uuid: 32e49539-f569-403d-b4b6-a8978c040d5d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: http, http-opts: {method: GET, path: [/]}, udp: true}
-  - {name: _电报频道： @mfjdpd 2, server: char.samrg.buzz, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cutino, headers: {Host: char.samrg.buzz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 3, server: 172.67.147.156, port: 443, type: vmess, uuid: 9e6ceeff-2546-3690-ac00-6fcdf31dec94, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /cutino, headers: {Host: char.samrg.buzz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 4, server: 137.175.3.232, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689935243027, headers: {Host: www.33021824.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 5, server: 142.4.104.196, port: 56000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 6, server: 137.175.3.226, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: _电报频道： @mfjdpd 7, server: 107.148.194.239, port: 55504, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 8, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _电报频道： @mfjdpd 9, server: 38.26.135.5, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 10, server: us.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 11, server: 104.16.44.213, port: 8080, type: vmess, uuid: 20670d72-d0ab-469e-81f4-1564f03955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
-  - {name: _电报频道： @mfjdpd 12, server: 104.18.1.196, port: 80, type: vmess, uuid: 0dfa89a7-fe08-454e-817b-374097be358f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: sg2-mlb.securev2ray.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 13, server: jp.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 14, server: 107.167.16.102, port: 47074, type: vmess, uuid: b74f4afa-1a57-4aff-b7e5-8ad5ea33566f, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 15, server: 192.74.232.232, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689935243027, headers: {Host: www.54092415.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 16, server: 104.17.20.55, port: 443, type: vmess, uuid: 495FAF9E-9775-4DC5-91F0-C4341B789B4F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: _电报频道： @mfjdpd 17, server: 45.12.112.102, port: 48901, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 18, server: edu1.v-pn.my.id, port: 443, type: vmess, uuid: 98476c2f-2971-4326-93c4-896a85124845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ikd2.vpn-akcelluler.my.id}}, udp: true}
-  - {name: _电报频道： @mfjdpd 19, server: 140.99.149.45, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 20, server: 142.0.139.213, port: 51522, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 21, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: dp3.scproxy.top}}, udp: true}
-  - {name: _电报频道： @mfjdpd 22, server: cfcdn3.sanfencdn.net, port: 2052, type: vmess, uuid: aa2c8122-d188-489f-88b9-b4af51b9ab9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: sg3.sanfencdn2.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 23, server: dongtaiwang3.com, port: 443, type: vmess, uuid: 6deddb7f-e557-42db-bfa0-cf40b36b27e2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: d.freeh1.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 24, server: dongtaiwang2.com, port: 443, type: vmess, uuid: 25a9f3b9-1e6d-40bd-968b-e0818c1b196f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: 2.freek1.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 25, server: 137.175.4.114, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1689767805929, headers: {Host: www.40735439.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 26, server: 104.18.29.109, port: 443, type: vmess, uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /16575, headers: {Host: cdnca1.digisport.shop}}, udp: true}
-  - {name: _电报频道： @mfjdpd 27, server: www.codepen.io, port: 443, type: vmess, uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 28, server: ahsorathiyaa.fly.dev, port: 443, type: vmess, uuid: de04add9-5c68-8bab-950c-08cd5320df18, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: ahsorathiyaa.fly.dev}}, udp: true}
-  - {name: _电报频道： @mfjdpd 29, server: jp.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 30, server: cf-lt.sharecentre.online, port: 80, type: vmess, uuid: 5f751c6e-50b1-4797-ba8e-6ffe324a0bce, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: nl.sharecentrepro.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 31, server: 203.23.104.190, port: 443, type: vmess, uuid: 495FAF9E-9775-4DC5-91F0-C4341B789B4F, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}, udp: true}
-  - {name: _电报频道： @mfjdpd 32, server: amszxc.66666654.xyz, port: 2095, type: vmess, uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hgcefomn, headers: {Host: amszx.66666654.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 33, server: hk.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 34, server: 45.199.138.162, port: 49355, type: vmess, uuid: 65ea6727-4461-47a7-a5c4-fef2c67f2f79, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 35, server: us.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 36, server: us.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 37, server: 104.31.16.46, port: 2082, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme100.fun}}, udp: true}
-  - {name: _电报频道： @mfjdpd 38, server: sg.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 39, server: hk.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 40, server: 47.104.240.230, port: 50002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 41, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 42, server: 140.99.149.45, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 43, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 44, server: 198.2.203.51, port: 44672, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 45, server: zfc.windowsupdate1.com, port: 443, type: vmess, uuid: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/pq/usfh3?ed=2048", headers: {Host: usfh3.pqjc.buzz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 46, server: 104.25.177.236, port: 8080, type: vmess, uuid: 20670d72-d0ab-469e-81f4-1564f03955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
-  - {name: _电报频道： @mfjdpd 47, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 48, server: 104.25.98.164, port: 8080, type: vmess, uuid: 20670d72-d0ab-469e-81f4-1564f03955b0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
-  - {name: _电报频道： @mfjdpd 49, server: 45.199.138.133, port: 55523, type: vmess, uuid: 1d474f0b-e78d-4af9-bc4a-a467467bc7a7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 50, server: speedip.eu.org, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 51, server: edu1.v-pn.my.id, port: 443, type: vmess, uuid: 98476c2f-2971-4326-93c4-896a85124845, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: ikd2.vpn-akcelluler.my.id}}, udp: true}
-  - {name: _电报频道： @mfjdpd 52, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
-  - {name: _电报频道： @mfjdpd 53, server: 38.26.135.5, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 54, server: sg.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp2.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 55, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
-  - {name: _电报频道： @mfjdpd 56, server: 142.4.97.76, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 57, server: 142.4.97.71, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 58, server: speedip.eu.org, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 59, server: ns1.v2-vip.fun, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 60, server: 142.4.126.70, port: 52212, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 61, server: cf.dalazhi.eu.org, port: 443, type: vmess, uuid: 64480f4c-61c2-4d88-89c3-fc0045229bfc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kplxvws, headers: {Host: us.dalazhi.eu.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 62, server: 104.31.16.46, port: 2082, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca5.tehme100.fun}}, udp: true}
-  - {name: _电报频道： @mfjdpd 63, server: 120.233.43.75, port: 50465, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 64, server: cf-lt.sharecentre.online, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v01.ssrsub.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 65, server: ns1.v2-vip.fun, port: 80, type: vmess, uuid: 8abe9496-5e24-4e49-b566-dcf86116017d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /i99LgvSaslbsPLLQQ7j6Z, headers: {Host: de5.irteh.fun}}, udp: true}
-  - {name: _电报频道： @mfjdpd 66, server: 45.12.112.122, port: 54774, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 67, server: www.codepen.io, port: 443, type: vmess, uuid: 2cd39102-0799-4c61-abb6-2e7a258f0397, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}, udp: true}
-  - {name: _电报频道： @mfjdpd 68, server: 108.166.203.183, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 69, server: cfcdn3.sanfencdn.net, port: 2052, type: vmess, uuid: aa2c8122-d188-489f-88b9-b4af51b9ab9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /zh-cn, headers: {Host: sg3.sanfencdn2.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 70, server: 137.175.18.90, port: 42002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 71, server: 104.31.16.28, port: 80, type: vmess, uuid: 58fe1542-5290-40ad-815a-77707a81afe5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /IOebhLMhl1CTbFHbL95myfRX2, headers: {Host: ca4.tehme2.fun}}, udp: true}
-  - {name: _电报频道： @mfjdpd 72, server: 142.4.97.76, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 73, server: 140.99.149.45, port: 53082, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 74, server: 108.166.203.183, port: 44945, type: vmess, uuid: 268a491b-764c-44d1-81a4-30de16130867, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 75, server: 156.225.67.207, port: 48123, type: vmess, uuid: d7735058-1dac-4618-99ff-0aa0441ec2d7, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 76, server: 162.159.50.55, port: 8880, type: vmess, uuid: d7ca2363-81c2-43a0-f141-352815da3ac3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /qwer, headers: {Host: uxx.vtcss.top}}, udp: true}
-  - {name: _电报频道： @mfjdpd 77, server: 142.4.97.72, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 78, server: speedip.eu.org, port: 8080, type: vmess, uuid: dd87d362-dba1-49aa-9c73-87c828f372d6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v03.ssrsub.com}}, udp: true}
-  - {name: _电报频道： @mfjdpd 79, server: 45.199.138.166, port: 55016, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 80, server: 104.31.16.85, port: 443, type: vmess, uuid: a2284cc1-20d8-4c78-a622-3e3cca767a70, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: a2284cc1, headers: {Host: dedi2.1808.cf}}, udp: true}
-  - {name: _电报频道： @mfjdpd 81, server: 142.4.97.74, port: 44942, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 82, server: 156.249.18.37, port: 48222, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 83, server: jp.mlxg.org, port: 80, type: vmess, uuid: c7442852-5a48-4456-8783-b7b8eebbca6c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us1.mlxg.org}}, udp: true}
-  - {name: _电报频道： @mfjdpd 84, server: 139.59.1.39, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: MWiIVYCyO8FfybKWhjt9Sz, udp: true}
-  - {name: _电报频道： @mfjdpd 85, server: 167.160.91.118, port: 10077, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
-  - {name: _电报频道： @mfjdpd 86, server: pqawszf.aiopen.cfd, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: us2.pqjc.site, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 87, server: 159.65.132.147, port: 443, type: trojan, password: a185ed4c-2b5c-4a6f-a674-4b67f9c3bfbc, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 88, server: 163.123.192.60, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 89, server: 163.123.192.60, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, skip-cert-verify: true, udp: true}
-  - {name: _电报频道： @mfjdpd 90, server: 159.65.132.147, port: 443, type: trojan, password: a185ed4c-2b5c-4a6f-a674-4b67f9c3bfbc, sni: dl.kgvn.garenanow.com, skip-cert-verify: true, udp: true}
+  - {name: ▷ 注意请及时更新订阅, server: gate.jiasuba.click, port: 47000, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: ▷ 电报 https://t.me/abc999222, server: gate.jiasuba.click, port: 47000, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: ▷ 陆续增加高品质收费线路, server: gate.jiasuba.click, port: 47000, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: ▷ IPv6线路：请打开客户端IPv6设置, server: de008.8jiasu.com, port: 17096, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.香港5, server: hk05.jiasuba.click, port: 47015, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.香港10, server: hk10.jiasuba.click, port: 47020, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.日本1.ChatGPT, server: jp01.jiasuba.click, port: 47031, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.新加坡2.ChatGPT, server: sg02.jiasuba.click, port: 47042, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.新加坡3.ChatGPT, server: sg03.jiasuba.click, port: 47043, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.新加坡4.ChatGPT, server: sg04.jiasuba.click, port: 47044, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.新加坡5.ChatGPT, server: sg05.jiasuba.click, port: 47045, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.澳大利亚1.ChatGPT, server: au01.jiasuba.click, port: 47051, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.美国1.ChatGPT, server: us01.jiasuba.click, port: 47061, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.美国2.ChatGPT, server: us02.jiasuba.click, port: 47062, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.美国4.ChatGPT, server: us04.jiasuba.click, port: 47064, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.加拿大1.ChatGPT, server: ca01.jiasuba.click, port: 47071, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.英国1.ChatGPT, server: gb01.jiasuba.click, port: 47081, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.法国1.ChatGPT, server: fr01.jiasuba.click, port: 47083, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.德国1.ChatGPT, server: de01.jiasuba.click, port: 47084, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP0.波兰1, server: pl01.jiasuba.click, port: 47085, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
+  - {name: VIP1.德国3.IPv6线路.ChatGPT, server: de008.8jiasu.com, port: 17096, type: ss, cipher: aes-256-gcm, password: f7126755-abb2-42ce-8c7b-a3c0dc111825, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -400,387 +124,113 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
+      - VIP1.香港5
+      - VIP1.香港10
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -796,96 +246,27 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - _电报频道： @mfjdpd
-      - _电报频道： @mfjdpd 2
-      - _电报频道： @mfjdpd 3
-      - _电报频道： @mfjdpd 4
-      - _电报频道： @mfjdpd 5
-      - _电报频道： @mfjdpd 6
-      - _电报频道： @mfjdpd 7
-      - _电报频道： @mfjdpd 8
-      - _电报频道： @mfjdpd 9
-      - _电报频道： @mfjdpd 10
-      - _电报频道： @mfjdpd 11
-      - _电报频道： @mfjdpd 12
-      - _电报频道： @mfjdpd 13
-      - _电报频道： @mfjdpd 14
-      - _电报频道： @mfjdpd 15
-      - _电报频道： @mfjdpd 16
-      - _电报频道： @mfjdpd 17
-      - _电报频道： @mfjdpd 18
-      - _电报频道： @mfjdpd 19
-      - _电报频道： @mfjdpd 20
-      - _电报频道： @mfjdpd 21
-      - _电报频道： @mfjdpd 22
-      - _电报频道： @mfjdpd 23
-      - _电报频道： @mfjdpd 24
-      - _电报频道： @mfjdpd 25
-      - _电报频道： @mfjdpd 26
-      - _电报频道： @mfjdpd 27
-      - _电报频道： @mfjdpd 28
-      - _电报频道： @mfjdpd 29
-      - _电报频道： @mfjdpd 30
-      - _电报频道： @mfjdpd 31
-      - _电报频道： @mfjdpd 32
-      - _电报频道： @mfjdpd 33
-      - _电报频道： @mfjdpd 34
-      - _电报频道： @mfjdpd 35
-      - _电报频道： @mfjdpd 36
-      - _电报频道： @mfjdpd 37
-      - _电报频道： @mfjdpd 38
-      - _电报频道： @mfjdpd 39
-      - _电报频道： @mfjdpd 40
-      - _电报频道： @mfjdpd 41
-      - _电报频道： @mfjdpd 42
-      - _电报频道： @mfjdpd 43
-      - _电报频道： @mfjdpd 44
-      - _电报频道： @mfjdpd 45
-      - _电报频道： @mfjdpd 46
-      - _电报频道： @mfjdpd 47
-      - _电报频道： @mfjdpd 48
-      - _电报频道： @mfjdpd 49
-      - _电报频道： @mfjdpd 50
-      - _电报频道： @mfjdpd 51
-      - _电报频道： @mfjdpd 52
-      - _电报频道： @mfjdpd 53
-      - _电报频道： @mfjdpd 54
-      - _电报频道： @mfjdpd 55
-      - _电报频道： @mfjdpd 56
-      - _电报频道： @mfjdpd 57
-      - _电报频道： @mfjdpd 58
-      - _电报频道： @mfjdpd 59
-      - _电报频道： @mfjdpd 60
-      - _电报频道： @mfjdpd 61
-      - _电报频道： @mfjdpd 62
-      - _电报频道： @mfjdpd 63
-      - _电报频道： @mfjdpd 64
-      - _电报频道： @mfjdpd 65
-      - _电报频道： @mfjdpd 66
-      - _电报频道： @mfjdpd 67
-      - _电报频道： @mfjdpd 68
-      - _电报频道： @mfjdpd 69
-      - _电报频道： @mfjdpd 70
-      - _电报频道： @mfjdpd 71
-      - _电报频道： @mfjdpd 72
-      - _电报频道： @mfjdpd 73
-      - _电报频道： @mfjdpd 74
-      - _电报频道： @mfjdpd 75
-      - _电报频道： @mfjdpd 76
-      - _电报频道： @mfjdpd 77
-      - _电报频道： @mfjdpd 78
-      - _电报频道： @mfjdpd 79
-      - _电报频道： @mfjdpd 80
-      - _电报频道： @mfjdpd 81
-      - _电报频道： @mfjdpd 82
-      - _电报频道： @mfjdpd 83
-      - _电报频道： @mfjdpd 84
-      - _电报频道： @mfjdpd 85
-      - _电报频道： @mfjdpd 86
-      - _电报频道： @mfjdpd 87
-      - _电报频道： @mfjdpd 88
-      - _电报频道： @mfjdpd 89
-      - _电报频道： @mfjdpd 90
+      - ▷ 注意请及时更新订阅
+      - ▷ 电报 https://t.me/abc999222
+      - ▷ 陆续增加高品质收费线路
+      - ▷ IPv6线路：请打开客户端IPv6设置
+      - VIP1.香港5
+      - VIP1.香港10
+      - VIP1.日本1.ChatGPT
+      - VIP0.新加坡2.ChatGPT
+      - VIP0.新加坡3.ChatGPT
+      - VIP0.新加坡4.ChatGPT
+      - VIP1.新加坡5.ChatGPT
+      - VIP0.澳大利亚1.ChatGPT
+      - VIP1.美国1.ChatGPT
+      - VIP0.美国2.ChatGPT
+      - VIP1.美国4.ChatGPT
+      - VIP0.加拿大1.ChatGPT
+      - VIP0.英国1.ChatGPT
+      - VIP0.法国1.ChatGPT
+      - VIP0.德国1.ChatGPT
+      - VIP0.波兰1
+      - VIP1.德国3.IPv6线路.ChatGPT
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
